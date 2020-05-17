@@ -4,5 +4,5 @@
 - [编程语言](/pages/index.md)
 
 ## 服务器
-- [Nginx](/paegs/back-end/nginx/index.md)
+- [Nginx](/pages/back-end/nginx/index.md)
 
