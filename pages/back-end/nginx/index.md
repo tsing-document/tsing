@@ -1,3 +1,8 @@
+# TODO:
+- nginx 原理
+- 动静分离
+- 高可用
+
 # 技术知识点
 
 ## [nginx基本概念](#nginx基本概念)
@@ -16,10 +21,6 @@
 - 负载均衡
 - 动静分离
 - 高可用
-
-
-## nginx 原理
-
 
 ### nginx基本概念
 - nginx 是什么？具体做什么事情？
@@ -79,5 +80,79 @@
 
 ### nginx配置
 - 反向代理
-    - 业务场景：
-        - 
+    - 业务场景-1：
+        - 在浏览器的地址栏中输入一个网址 `www.123.com` 跳转到 `tomcat` 主页中。
+    
+    - 访问过程:
+        ![avatar](./images/nginx配置实例-反向代理.png)
+    
+    - 配置 `nginx.conf` 文件 :
+        ```bash
+            ...
+                server_name www.123.com;
+                location / {
+                    proxy_pass http://127.0.0.1:8080;
+                };
+            ...
+        ```
+
+    - 业务场景-2:
+        - 使用 `nginx` 反向代理，根据访问路径跳转不同的服务中去。
+    
+    - 访问过程:
+        ![avatar](./images/nginx配置实例-反向代理-url.png)。
+    
+    - 配置 `nginx.conf` 文件：
+        ```bash
+            ...
+                server{ 
+                    listen 9001;
+                    server_name location;
+                    
+                    location ~ /edu/ {
+                        proxy_pass http://127.0.0.1:8080;
+                    }
+
+                    location ~ /vod/ {
+                        proxy_pass http://127.0.0.1:8081;
+                    }
+                }
+            ...
+        ```
+        
+- 负载均衡
+    - 负载均衡的分配策略:
+        - 轮询(默认)
+        - weight: 权重
+        - ip_hash: 每个用户的访问固定ip
+        - fair(第三方工具)：按照后端响应时间，响应时间端的优先分配。
+    - 业务场景:
+        - 在浏览器地址中输入 `http://ip/edu/a.html`， 负载均衡会将请求平均的分配到 `8080` 和 `8081` 服务中。
+
+    - 配置 `nginx.conf` 文件：
+        - 在 `http` 块下添加：
+            ```bash
+                ...
+                    upstream myserver {
+                        server ip：port;
+                        server ip1: port;
+                    }
+                ...
+            ```
+
+        - 在 `server` 中:
+            ```bash
+                server {
+                    listen 80;
+                    server_name ip; # 从上随便找一个 ip
+                    location / {
+                        proxy_pass http://myserver;
+                    }
+                }
+            ```
+
+- 动静分离
+    - 略
+
+- 高可用
+    - 略
