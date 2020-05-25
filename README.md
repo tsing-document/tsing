@@ -9,3 +9,5 @@
 ## 服务器
 - [Nginx](/pages/back-end/nginx/index.md)
 
+## 作者信息
+- [简历](/pages/back-end/nginx/index.md)
