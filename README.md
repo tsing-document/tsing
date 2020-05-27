@@ -9,5 +9,8 @@
 ## 服务器
 - [Nginx](/pages/back-end/nginx/index.md)
 
+## 网络通讯
+- [Axios](/pages/network/axios/index.md)
+
 ## 作者信息
 - [简历](/pages/author/index.md)
