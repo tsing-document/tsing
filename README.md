@@ -13,7 +13,7 @@
 - [Axios](/pages/network/axios/index.md)
 
 ## 性能优化方案
-- [Performance Optimization](/pages/performance-optimization/yslow/index.md)
+- [Yslow](/pages/performance-optimization/yslow/index.md)
 
 ## 项目
 - 百场汇项目部署结构
