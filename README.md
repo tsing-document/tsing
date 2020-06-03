@@ -23,8 +23,11 @@
 
 ## TODO
 - HTML标签
-- 算法
-- 设计模式
+- Css
+- 9大算法
+    - 10排序
+- 23种设计模式
+- 6个数据结构
 - PM2
 - Next
 - Nuxt
@@ -36,7 +39,7 @@
 - Nodejs
 - Markdown
 - Springboot
-- Springcloud
+- SpringCloud
 - Dubbo
 - Maven
 - Mysql
@@ -58,7 +61,6 @@
 - Webpack
 - Http
 - Http2.0
-- Css
 - Es6
 - Felk
 - Uml
