@@ -15,6 +15,9 @@
 ## 性能优化方案
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 
+## Editor
+- [Yslow](/pages/markdown/index.md)
+
 ## 项目
 - 百场汇项目部署结构
 
@@ -22,13 +25,9 @@
 - [简历](/pages/author/index.md)
 
 ## TODO
-- HTML标签
+- Vue
+- React
 - Css
-- 9大算法
-    - 10排序
-- 23种设计模式
-- 8个数据结构
-- 6大设计原则
 - PM2
 - Next
 - Nuxt
@@ -48,8 +47,6 @@
 - Redis
 - Async/Await
 - TypeScript
-- Vue
-- React
 - Jdk8
 - 小程序
 - Lint
@@ -66,3 +63,10 @@
 - Felk
 - Uml
 - GraphQL
+
+- HTML标签
+- 9大算法
+    - 10排序
+- 23种设计模式
+- 8个数据结构
+- 6大设计原则
