@@ -16,7 +16,7 @@
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 
 ## Editor
-- [Yslow](/pages/markdown/index.md)
+- [Markdown](/pages/markdown/index.md)
 
 ## 项目
 - 百场汇项目部署结构
