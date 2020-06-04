@@ -37,7 +37,6 @@
 - Ssr
 - Promise
 - Nodejs
-- Markdown
 - Springboot
 - SpringCloud
 - Dubbo
