@@ -27,18 +27,12 @@
 - [简历](/pages/author/index.md)
 
 ## TODO
-- Vue
-- [React 入门指南]()
 - Css
 - PM2
-- Next
-- Nuxt
-- Nest
 - Less
 - Sass
 - Ssr
 - Promise
-- Nodejs
 - Springboot
 - SpringCloud
 - Dubbo
@@ -47,7 +41,6 @@
 - Mongodb
 - Redis
 - Async/Await
-- TypeScript
 - Jdk8
 - 小程序
 - Taro
@@ -65,6 +58,14 @@
 - Felk
 - Uml
 - GraphQL
+
+- Nodejs
+- TypeScript
+- Vue
+- [React 入门指南]()
+- Next
+- Nuxt
+- Nest
 
 - HTML标签
 - 9大算法
