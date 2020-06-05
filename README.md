@@ -18,10 +18,8 @@
 ## Editor
 - [Markdown](/pages/markdown/index.md)
 
-## 框架
-
 ## 项目
-- 百场汇项目部署结构
+- [百场汇项目部署结构](/pages/project/baichanghui/index.md)
 
 ## 作者信息
 - [简历](/pages/author/index.md)
