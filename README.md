@@ -50,6 +50,7 @@
 - TypeScript
 - Jdk8
 - 小程序
+- Taro
 - Lint
 - Flex
 - 本地存储和cookies的区别
