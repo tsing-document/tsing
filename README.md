@@ -3,6 +3,9 @@
 ## 介绍
 - [编程语言](/pages/index.md)
 
+## 规范
+- [JavaScript书写规范](/pages/standard/index.md)
+
 ## 版本控制系统
 - [Git](/pages/versioncontrol/git/index.md)
 
