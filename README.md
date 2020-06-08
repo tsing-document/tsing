@@ -27,6 +27,8 @@
 - 技术猪🐷
     - [技术猪](/pages/project/pig/index.md)
 
+## 碎片化知识点
+- [前端](/pages/fragmentation/font-end/index.md)
 
 ## 作者信息
 - [简历](/pages/author/index.md)
