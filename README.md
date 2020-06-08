@@ -19,7 +19,11 @@
 - [Markdown](/pages/markdown/index.md)
 
 ## 项目
-- [百场汇项目部署结构](/pages/project/baichanghui/index.md)
+- 百场汇
+    - [百场汇项目部署结构](/pages/project/baichanghui/index.md)
+- 技术猪🐷
+    - [技术猪](/pages/project/pig/index.md)
+
 
 ## 作者信息
 - [简历](/pages/author/index.md)
