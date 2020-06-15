@@ -29,6 +29,7 @@
 
 ## 碎片化知识点
 - [前端](/pages/fragmentation/font-end/index.md)
+- [让人心动的算法](/pages/fragmentation/algorithm/index.md)
 
 ## 作者信息
 - [简历](/pages/author/index.md)
