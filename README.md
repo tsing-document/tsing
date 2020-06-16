@@ -66,6 +66,7 @@
 - Felk
 - Uml
 - GraphQL
+- 正则表达式
 
 - Nodejs
 - TypeScript
