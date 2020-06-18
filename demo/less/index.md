@@ -295,6 +295,7 @@
 # 四. 嵌套规则
 - 1.什么是嵌套规则？
     - 嵌套规则是它模仿了 `Html` 的结构，让我们的 `css` 代码更加简介明了清晰。
+
 - 2.实例：
     ```html
         <div>
@@ -317,3 +318,64 @@
             }
         }
     ```
+
+- 3.父元素选择器&
+    ```html
+        <div>
+            <div>
+                <div class="return-value">返回值</div>
+            </div>
+        </div>
+    ```
+    ```less
+        .average(@x, @y) {
+            @average: ((@x + @y)/2);
+        }
+
+        .return-value {
+            .average(100px, 200px);
+            padding: @average;
+            background: turquoise;
+            &:hover {
+                background-color: violet;
+            }
+        }
+    ```
+
+- 4.改变选择器的顺序
+
+- 5.组合生成使用所有可能的选择器列表
+
+# 五. 运算
+- 1.运算说明：
+    - 任何数值，颜色和变量都可以进行运算。
+
+- 2.数值型运算：
+    - 概念：
+        - less会为你自动推算出数值的单位，所以你不必为每一个值都加上单位
+        - 注意：
+            - 运算符号和值之间必须用空格分开，涉及优先级时用 `()` 尽心优先级运算
+    - 实例：
+        ```html
+            <div>
+                <div class='operations'>
+                    运算
+                </div>
+            </div>
+        ```
+        ```less
+            @base: 50px;
+            @filler: @base * 2;
+            @other: @base + @filler;
+
+            .operations {
+                width: 100px;
+                height: @other;
+                background-color: aqua;
+            }
+        ```
+
+- 3.颜色值运算：
+    - less 在运算时，先将颜色转化成 rgb 模式，然后在转换成 16 进制并返回。
+
+# 六. 函数
