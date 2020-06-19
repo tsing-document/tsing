@@ -27,7 +27,7 @@
 ## performance optimization
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 
-## Editor
+## editor
 - [Markdown](/pages/markdown/index.md)
 
 ## project
