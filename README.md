@@ -1,47 +1,46 @@
 # 《全栈技术》
 
-## 介绍
 - [编程语言](/pages/index.md)
 
-## 前端
+## front end
 - [HTML标签](/pages/font-end/htmllabel/index.md)
 
-## 后端
+## back end
 
-## 存储
+## storage
 
-## 规范
+## standard
 - [JavaScript书写规范](/pages/standard/index.md)
 
-## 版本控制系统
+## version control
 - [Git](/pages/versioncontrol/git/index.md)
 
-## Package Manager
+## package manager
 - [Yarn](/pages/package/yarn/index.md)
 
-## 服务器
+## server
 - [Nginx](/pages/back-end/nginx/index.md)
 
-## 网络通讯
+## network communication
 - [Axios](/pages/network/axios/index.md)
 
-## 性能优化方案
+## performance optimization
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 
 ## Editor
 - [Markdown](/pages/markdown/index.md)
 
-## 项目
+## project
 - 百场汇
     - [百场汇项目部署结构](/pages/project/baichanghui/index.md)
 - 技术猪🐷
     - [技术猪](/pages/project/pig/index.md)
 
-## 碎片化知识点
+## knowledge points
 - [前端](/pages/fragmentation/font-end/index.md)
 - [让人心动的算法](/pages/fragmentation/algorithm/index.md)
 
-## 作者信息
+## author
 - [简历](/pages/author/index.md)
 
 ## TODO
