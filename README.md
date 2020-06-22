@@ -1,36 +1,22 @@
 # 《全栈技术》
 
 - [编程语言](/pages/index.md)
-
-## front end
-- [HTML标签](/pages/font-end/htmllabel/index.md)
-
-## back end
-
-## storage
-
-## standard
 - [JavaScript书写规范](/pages/standard/index.md)
-
-## version control
-- [Git](/pages/versioncontrol/git/index.md)
-
-## package manager
-- [Yarn](/pages/package/yarn/index.md)
-
-## server
-- [Nginx](/pages/back-end/nginx/index.md)
-
-## network communication
-- [Axios](/pages/network/axios/index.md)
-
-## performance optimization
 - [Yslow](/pages/performance-optimization/yslow/index.md)
-
-## editor
 - [Markdown](/pages/markdown/index.md)
 
-## project
+## 前端
+- [HTML标签](/pages/font-end/htmllabel/index.md)
+
+## 版本控制 & 包管理器 & 服务器
+- [Git](/pages/versioncontrol/git/index.md)
+- [Yarn](/pages/package/yarn/index.md)
+- [Nginx](/pages/back-end/nginx/index.md)
+
+## 网络通讯
+- [Axios](/pages/network/axios/index.md)
+
+## 项目
 - 百场汇
     - [百场汇项目部署结构](/pages/project/baichanghui/index.md)
 - 技术猪🐷
@@ -40,7 +26,7 @@
 - [前端](/pages/fragmentation/font-end/index.md)
 - [让人心动的算法](/pages/fragmentation/algorithm/index.md)
 
-## author
+## Author
 - [简历](/pages/author/index.md)
 
 ## TODO
