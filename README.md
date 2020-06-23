@@ -4,6 +4,8 @@
 - [JavaScript书写规范](/pages/standard/index.md)
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 - [Markdown](/pages/markdown/index.md)
+- [前端](/pages/fragmentation/font-end/index.md)
+- [让人心动的算法](/pages/fragmentation/algorithm/index.md)
 
 ## 前端
 - [HTML标签](/pages/font-end/htmllabel/index.md)
@@ -22,11 +24,7 @@
 - 技术猪🐷
     - [技术猪](/pages/project/pig/index.md)
 
-## knowledge points
-- [前端](/pages/fragmentation/font-end/index.md)
-- [让人心动的算法](/pages/fragmentation/algorithm/index.md)
-
-## Author
+## 作者信息
 - [简历](/pages/author/index.md)
 
 ## TODO
@@ -53,7 +51,7 @@
 - ES
 - MVC&MVP&MVVM
 - Yarn
-- Npm
+- Npm   
 - Webpack
 - Http
 - Http2.0
