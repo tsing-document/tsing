@@ -1,12 +1,14 @@
 # 《全栈技术》
 
-## |><| [后端](/share/back_end)
+## |><| [编程语言](/introduce.md) 
 
 ## |><| [前端](/share/font_end/index.md)
 
+## |><| [后端](/share/back_end)
+
 ## |><| [算法&数据结构&设计模式]()
 
-## |><| [作者信息](/pages/author/index.md)
+## |><| [作者信息](/author.md)
 
 ## TODO
 - Css
