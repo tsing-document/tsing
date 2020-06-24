@@ -2,7 +2,7 @@
 
 ## |><| [后端](/share/back_end)
 
-## |><| [前端](/share/font_end)
+## |><| [前端](/share/font_end/index.md)
 
 ## |><| [算法&数据结构&设计模式]()
 
