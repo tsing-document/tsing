@@ -6,19 +6,12 @@
 - [Markdown](/pages/markdown/index.md)
 - [前端](/pages/fragmentation/font-end/index.md)
 - [让人心动的算法](/pages/fragmentation/algorithm/index.md)
-
-## 前端
 - [HTML标签](/pages/font-end/htmllabel/index.md)
-
-## 版本控制 & 包管理器 & 服务器
 - [Git](/pages/versioncontrol/git/index.md)
 - [Yarn](/pages/package/yarn/index.md)
 - [Nginx](/pages/back-end/nginx/index.md)
-
-## 网络通讯
 - [Axios](/pages/network/axios/index.md)
 
-## 项目
 - 百场汇
     - [百场汇项目部署结构](/pages/project/baichanghui/index.md)
 - 技术猪🐷
