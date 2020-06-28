@@ -1,6 +1,5 @@
 # 《全栈技术》
 
-- [JavaScript书写规范](/pages/standard/index.md)
 - [Yslow](/pages/performance-optimization/yslow/index.md)
 - [Markdown](/pages/markdown/index.md)
 - [前端](/pages/fragmentation/font-end/index.md)
@@ -22,10 +21,6 @@
 - Sass
 - Ssr
 - Promise
-- Springboot
-- SpringCloud
-- Dubbo
-- Maven
 - Mysql
 - Mongodb
 - Redis
@@ -48,7 +43,6 @@
 - Uml
 - GraphQL
 - 正则表达式
-
 - Nodejs
 - TypeScript
 - Vue
@@ -56,6 +50,12 @@
 - Next
 - Nuxt
 - Nest
+---
+- Springboot
+- SpringCloud
+- Maven
+- Dubbo
+---
 - 9大算法
     - 10排序
 - 23种设计模式
