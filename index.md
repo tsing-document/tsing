@@ -7,7 +7,6 @@
 - [Git](/pages/versioncontrol/git/index.md)
 - [Yarn](/pages/package/yarn/index.md)
 - [Nginx](/pages/back-end/nginx/index.md)
-- [Axios](/pages/network/axios/index.md)
 
 - 百场汇
     - [百场汇项目部署结构](/pages/project/baichanghui/index.md)

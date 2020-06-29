@@ -17,11 +17,7 @@
 - Sass
 - Ssr
 - Promise
-- Mysql
-- Mongodb
-- Redis
 - Async/Await
-- Jdk8
 - 小程序
 - Taro
 - Lint
@@ -47,6 +43,11 @@
 - Nuxt
 - Nest
 ---
+- Mysql
+- Mongodb
+- Redis
+---
+- Jdk8
 - Springboot
 - SpringCloud
 - Maven
