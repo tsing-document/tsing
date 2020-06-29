@@ -39,8 +39,8 @@
 - TypeScript
 - Vue
 - [React 入门指南]()
-- Next
-- Nuxt
+- vue -> Next
+- react -> Nuxt
 - Nest
 ---
 - Mysql
