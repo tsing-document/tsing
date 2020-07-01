@@ -62,10 +62,10 @@
             - 格式:
                 ```css
                     > E {...}: 指定该 css 样式对所有的 e 元素起作用。
-                    > E[attr]{...}: 执行该 css 样式对所有 e 元素起作用。
-                    > E[attr=value]{...}: 指定该 css 样式对所有包含attr属性，且attr属性为value的 e 元素起作用。
-                    > E[attr ~=value]{ ... }: 指定该css样式对所有包含 attr 属性，且attr属性的值为空格隔开的系列值，其中某个值为value的e元素起作用。
-                    > E[attr =value]{ ... }: 指定该css样式对所有包含attr属性，且attr属性的值为以连字符分隔的系列值，其中第一个值为value的tag元素起作用。
+                    > E[attr] {...}: 执行该 css 样式对所有 e 元素起作用。
+                    > E[attr=value] {...}: 指定该 css 样式对所有包含attr属性，且attr属性为value的 e 元素起作用。
+                    > E[attr ~=value] { ... }: 指定该css样式对所有包含 attr 属性，且attr属性的值为空格隔开的系列值，其中某个值为value的e元素起作用。
+                    > E[attr =value] { ... }: 指定该css样式对所有包含attr属性，且attr属性的值为以连字符分隔的系列值，其中第一个值为value的tag元素起作用。
                     > E[att^="value"] {...}: 指定该css样式对所有包含attr属性，且attr的属性值为以value开头的字符串的e元素起作用。
                     > E[att$="value"] {...}: 指定该css样式对所有包含attr属性，且attr属性的值为以value结尾的字符串的e元素起作用。
                     > E[att*="value"] {...}: 指定该css样式对所有包含attr属性，且attr属性的值为包含value的字符串的e元素起作用。
