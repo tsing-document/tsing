@@ -197,4 +197,164 @@
             - 解释:
                 - 上面所有的都会作用上。
         - 伪元素选择器:
-            - 
+            - 伪元素:
+                ```css
+                    > :first-letter:  该选择器对应的 css 样式对指定对象内的第一个字符起作用。
+                    > :first-line: 该选择器对应css样式对指定对象内的第一行内容起作用。
+                    > :before: 该选择器和内容相关的属性结合使用，用于在指定对象内容的前端添加内容。
+                    > :after: 该选择器和内容相关的书香结合使用，用于在指定对象内部的尾端添加内容。
+                ```
+            - 格式:
+                ```css
+                    span {
+                        display: block;
+                    }
+
+                    /* span 元素里的第一个字母加粗，变红。由于span是一个行内元素，需要将行内元素变成块级元素 */
+                    span:first-letter {
+                        color: #f00;
+                        font-size: 20pt;
+                    }
+
+                    /* section 元素里的第一个字母加粗，变蓝 */
+                    section:first-letter {
+                        color: #00f;
+                        font-size: 30pt;
+                        font-weight: bold;
+                    }
+
+                    p:first-line {
+                        color: #00f;
+                        font-size: 40pt;
+                        font-weight: bold;
+                    }
+
+                    span:first-line {
+                        color: #f00;
+                        font-size: 20pt;
+                    }
+
+                    section:first-line {
+                        color: #00f;
+                        font-size: 30pt;
+                        font-weight: bold;
+                    }
+
+                    p:first-line {
+                        color: #00f;
+                        font-size: 40pt;
+                        font-weight: bold;
+                    }
+                ```
+                ```html
+                    <span>
+                        abc<br/>
+                        def
+                    </span>
+                    <section>
+                        其实我是一个程序员<br/>
+                        还是一个渣男
+                    </section>
+                    <p>
+                        疯狂java讲义<br/>
+                        这本书还没看完
+                    </p>
+                ```
+        - 内容相关属性:
+            - 格式:
+                ```css
+                    /* 指定向 div 元素内部的前端输入 content 属性对应的内容 */
+                    div>div:before {
+                        content: "插入内容";
+                        color: blue;
+                        font-weight: bold;
+                        background-color: gray;
+                    }
+
+                    /* 指定向 div 元素内部的后端输入 content 属性对应的内容 */
+                    div>div:after {
+                        content: "插入内容";
+                        color: blue;
+                        font-weight: bold;
+                        background-color: gray;
+                    }
+
+                    /* 插入图片 */
+                    .pic::after {
+                        content: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593680378249&di=db96d61e0a61f0fb86fdd0492c3e39c9&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F36%2F48%2F19300001357258133412489354717.jpg);
+                    }
+
+                    /* 配合 quotes 属性执行插入 */
+                    div>div {
+                        quotes: "<<" ">>";
+                    }
+                    /* 指定向 div 元素内部的前端输入 content 属性对应的内容 */
+                    div>div:before {
+                        content: open-quote;
+                        color: blue;
+                        font-weight: bold;
+                        background-color: gray;
+                    }
+
+                    /* 指定向 div 元素内部的前端输入 content 属性对应的内容 */
+                    div>div:after {
+                        content: close-quote;
+                        color: blue;
+                        font-weight: bold;
+                        background-color: gray;
+                    }
+                   /* 添加编号 */
+                    div>div {
+                        counter-increment: mycontent;
+                    }
+
+                    div>div::before {
+                        content: counter(mycontent, lower-greek);
+                        font-size: 20pt;
+                        column-width: bold;
+                    }
+                ```
+                ```html
+                    <div>
+                        <div>
+                            疯狂 java 讲义
+                        </div>
+                        <div>
+                            疯狂 android 讲义
+                        </div>
+                        <div>
+                            轻量级 java ee 企业应用实战
+                        </div>
+                        <div class="pic">
+                            插入图片
+                        </div>
+                    </div>
+                ```
+        - css3新增的伪类选择器:
+            - 结构性伪类选择器:
+                - Selector:root:
+                    - 匹配文档的根元素，在 html 文档中，根元素永远是<html.../>元素。
+                - Selector:last-child:
+                    - 匹配符合 Selector 选择器，而且必须是其父元素的最后一个子节点的元素。
+                - Selector:first-child:
+                    - 匹配符合 Selector 选择器，而且必须是其父元素的第一个子元素。
+                - Selector:nth-child(n):
+                    - 匹配符合 Selector 选择器，而且必须是其父元素的第 n 个子节点的元素。
+                - Selector:nth-last-child(n):
+                    - 匹配符合 Selector 选择器，而且必须是其父元素的倒数第 n 个子元素。
+                - Selector:only-child:
+                    - 匹配符合 Selector 选择器，而且必须是其父元素的唯一子节点的元素。
+                - Selector:first-of-type: 
+                    - 匹配符合 Selector 选择器，而且是和它同类型、同级的兄弟的元素的第一个元素。
+                - Selector:last-of-type:
+                    - 匹配符合 Selector 选择器，而且是和它同类型，同级的兄弟元素中的最后一个。
+                - Selector:nth-of-type(n):
+                    - 匹配符合 Selector 选择器，而且是和它同类型，同级的兄弟元素的第 n 个元素。 
+                - Selector:nth-last-of-type(n):
+                    - 匹配符合 Selector 选择器，而且是和它同类型，同级的兄弟元素的倒数第 n 个元素。
+                - Selector:only-of-type:
+                    - 匹配符合 Selector 选择器，而且是和它同类型，同级的兄弟元素的唯一一个元素。
+                - Selector:empty:
+                    - 匹配符合 Selector 选择器，而且其内部没有任何子元素的元素。
+                - Selector:lang(lang):
+                    - 匹配符合 Selector 选择器，而且内容是特定语言的元素。
