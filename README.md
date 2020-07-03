@@ -12,7 +12,7 @@
 
 ## |><| [版本管理工具](/share/vs/git/index.md)
 
-## |><| [网站优化]](/share/optimization/index.md)
+## |><| [网站优化](/share/optimization/index.md)
 
 ## |--| 图书
 - ### [番茄工作法](/share/book/tomato.md)
