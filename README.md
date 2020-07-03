@@ -6,7 +6,7 @@
 
 ## |><| [后端](/share/back_end)
 
-## |><| [Server](/share/server/nginx/index.md)
+## |><| [Server](/share/server/index.md)
 
 ## |><| [算法&数据结构&设计模式]()
 
