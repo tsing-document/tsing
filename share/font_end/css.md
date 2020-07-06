@@ -452,5 +452,295 @@
                     ```
                 - :first-line
                     ```html
-                        
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>:first-line</title>
+                            <style type="text/css">
+                                span {
+                                    display: block;
+                                }
+                                /*
+                                    span 元素里第一个字母加粗、变红，由于 span 是行内元素，因此需要先把行内元素变成块级元素。
+                                */
+                                span:first-line {
+                                    color: #f00;
+                                    font-size: 20pt;
+                                }
+                                
+                                section:first-line {
+                                    color: #00f;
+                                    font-size: 30pt;
+                                    font-weight: bold;
+                                }
+
+                                p:first-line {
+                                    color: #00f;
+                                    font-size: #00f;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <span>
+                                abc
+                                <br/>
+                                xyz
+                            </span>
+                            <section>
+                                白日衣衫尽，
+                                <br/>
+                                黄河入海流。
+                            </section>
+                            <p style="width: 160px;">
+                                疯狂 java 讲义
+                            </p>
+                        </body>
+                        </html>
                     ```
+        - 内容相关的属性：
+            - 语法：
+                ```css
+                    /* css 支持的内容相关的属性 */
+                    include-source:
+                        - 该属性的值应为 url，插入绝对或者相对路径，目前还没有浏览器支持该属性。
+                    content:
+                        - 该属性的值可以是字符串、url、attr(alt)、counter(name)、counter(name,list-style-type)、open-quote、close-quote等格式。该属性用于指定元素之前或之后插入指定内容。
+                    qiotes:
+                        - 该属性用于content属性定义open-quote和close-quote，该属性的值可以是两个以空格分隔字符串，其中前面的字符串是 open-quote,后面的字符串是close-quote。
+                    counter-increment:
+                        - 该属性用于定义一个计数器。该属性的值就是所定义的计数器的名称。
+                    - counter-reset:
+                        - 该属性用于对指定的计数值复位。
+                ```
+            - 案例：
+                - 插入内容：
+                    ```html
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title> content </title>
+                            <style type="text/css">
+                                span {
+                                    display: block;
+                                }
+                                /*
+                                    指定向 div 元素内部的前端插入 content 属性对应的内容
+                                */
+                                div>div:before {
+                                    content: '插入的内容';
+                                    color: #f00;
+                                    font-size: 20pt;
+                                    font-weight: bold;
+                                }
+
+                            </style>
+                        </head>
+                        <body>
+                            <div>
+                                <div>白日依山进，</div>
+                                <div>黄河入海流。</div>
+                                <div>欲穷千里目，</div>
+                                <div>更上一层楼。</div>
+                            </div>
+                        </body>
+                        </html>
+                    ```
+                - 插入图像：
+                    ```html
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title> 插入图像 </title>
+                            <style type="text/css">
+                                /*
+                                    指定向 div 元素内部的后端插入 content 属性对应的内容
+                                */
+                                div>div:after {
+                                    content: url('wc.gif');
+                                }
+
+                            </style>
+                        </head>
+                        <body>
+                            <div>
+                                <div>白日依山进，</div>
+                                <div>黄河入海流。</div>
+                                <div>欲穷千里目，</div>
+                                <div>更上一层楼。</div>
+                            </div>
+                        </body>
+                        </html>
+                    ```
+                - 只插入部分元素：
+                    ```html
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title> 部分插入图片 </title>
+                            <style type="text/css">
+                                /*
+                                    指定向 div 元素内部的后端插入 content 属性对应的内容
+                                */
+                                div>div.no:after {
+                                    content: url('wc.gif');
+                                }
+
+                            </style>
+                        </head>
+                        <body>
+                            <div>
+                                <div class="no">白日依山进，</div>
+                                <div class="no">黄河入海流。</div>
+                                <div>欲穷千里目，</div>
+                                <div>更上一层楼。</div>
+                            </div>
+                        </body>
+                        </html>
+                    ```
+                - 配合 quotes 属性执行插入：
+                    ```css
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title> 配合quotes属性执行插入 - 添加符合</title>
+                            <style type="text/css">
+                                /*
+                                    定义 open-quote 为 <<， close为 >> 
+                                */
+                                div>div {
+                                    quotes: "<<" ">>";
+                                }
+
+                                div>div:before {
+                                    content: open-quote;
+                                }
+
+                                div>div:after {
+                                    content: close-quote;
+                                }
+
+                            </style>
+                        </head>
+                        <body>
+                            <div>
+                                <div>白日依山进，</div>
+                                <div>黄河入海流。</div>
+                                <div>欲穷千里目，</div>
+                                <div>更上一层楼。</div>
+                            </div>
+                        </body>
+                        </html>
+                    ```
+        - 配合 counter-increment 属性添加编号：
+            ```html
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title> 配合counter-increment属性添加编号</title>
+                    <style type="text/css">
+                
+                        div>div {
+                            counter-increment: myconter;
+                        }
+
+                        div>div:before {
+                            content: counter(myconter) '.';
+                        }
+
+
+                    </style>
+                </head>
+                <body>
+                    <div>
+                        <div>白日依山进，</div>
+                        <div>黄河入海流。</div>
+                        <div>欲穷千里目，</div>
+                        <div>更上一层楼。</div>
+                    </div>
+                </body>
+                </html>
+            ```
+        - 使用自定义编号：
+            ```css
+                /* 通过 counter(name, list-style-type) 来实现自定义编号*/
+                decimal:
+                    - 阿拉伯数字，默认值
+                disc:
+                    - 实心圆
+                circle:
+                    - 空心圆
+                square:
+                    - 方块
+                lower-roman:
+                    - 小写罗马数字
+                upper-roman:
+                    - 大写罗马数字
+                lower-alpha:
+                    - 小写英文字母
+                upper-alpha:
+                    - 大写英文字母
+                none:
+                    - 不使用项目符合
+                cjk-ideographic:
+                    - 浅白色的表的数字
+                georgian:
+                    - 传统的乔治数字
+                lower-greek:
+                    - 基本的希腊小写字母
+                hebrew:
+                    - 传统的希伯莱数字
+                hiragana:
+                    - 日本平假名字符
+                hiragana-iroha:
+                    - 日本平假名序号
+                katakana:
+                    - 日本片假名字符
+                katakana-iroha:
+                    - 日本片假名序号
+                lower-latin:
+                    - 小写拉丁字母
+                upper-latin:
+                    - 大写拉丁字母
+            ```
+            ```html
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title> 自定义编号 </title>
+                    <style type="text/css">
+                
+                        div>div {
+                            counter-increment: myconter;
+                        }
+
+                        div>div:before {
+                            content: '第' counter(myconter, lower-greek) '行.';
+                        }
+
+                    </style>
+                </head>
+                <body>
+                    <div>
+                        <div>白日依山进，</div>
+                        <div>黄河入海流。</div>
+                        <div>欲穷千里目，</div>
+                        <div>更上一层楼。</div>
+                    </div>
+                </body>
+                </html>
+            ```
+
