@@ -641,106 +641,332 @@
                         </body>
                         </html>
                     ```
-        - 配合 counter-increment 属性添加编号：
-            ```html
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title> 配合counter-increment属性添加编号</title>
-                    <style type="text/css">
-                
-                        div>div {
-                            counter-increment: myconter;
-                        }
+        - 编号：
+            - 配合 counter-increment 属性添加编号：
+                ```html
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title> 配合counter-increment属性添加编号</title>
+                        <style type="text/css">
+                    
+                            div>div {
+                                counter-increment: myconter;
+                            }
 
-                        div>div:before {
-                            content: counter(myconter) '.';
-                        }
+                            div>div:before {
+                                content: counter(myconter) '.';
+                            }
 
 
-                    </style>
-                </head>
-                <body>
-                    <div>
-                        <div>白日依山进，</div>
-                        <div>黄河入海流。</div>
-                        <div>欲穷千里目，</div>
-                        <div>更上一层楼。</div>
-                    </div>
-                </body>
-                </html>
-            ```
-        - 使用自定义编号：
-            ```css
-                /* 通过 counter(name, list-style-type) 来实现自定义编号*/
-                decimal:
-                    - 阿拉伯数字，默认值
-                disc:
-                    - 实心圆
-                circle:
-                    - 空心圆
-                square:
-                    - 方块
-                lower-roman:
-                    - 小写罗马数字
-                upper-roman:
-                    - 大写罗马数字
-                lower-alpha:
-                    - 小写英文字母
-                upper-alpha:
-                    - 大写英文字母
-                none:
-                    - 不使用项目符合
-                cjk-ideographic:
-                    - 浅白色的表的数字
-                georgian:
-                    - 传统的乔治数字
-                lower-greek:
-                    - 基本的希腊小写字母
-                hebrew:
-                    - 传统的希伯莱数字
-                hiragana:
-                    - 日本平假名字符
-                hiragana-iroha:
-                    - 日本平假名序号
-                katakana:
-                    - 日本片假名字符
-                katakana-iroha:
-                    - 日本片假名序号
-                lower-latin:
-                    - 小写拉丁字母
-                upper-latin:
-                    - 大写拉丁字母
-            ```
-            ```html
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title> 自定义编号 </title>
-                    <style type="text/css">
-                
-                        div>div {
-                            counter-increment: myconter;
-                        }
+                        </style>
+                    </head>
+                    <body>
+                        <div>
+                            <div>白日依山进，</div>
+                            <div>黄河入海流。</div>
+                            <div>欲穷千里目，</div>
+                            <div>更上一层楼。</div>
+                        </div>
+                    </body>
+                    </html>
+                ```
+            - 使用自定义编号：
+                ```css
+                    /* 通过 counter(name, list-style-type) 来实现自定义编号*/
+                    decimal:
+                        - 阿拉伯数字，默认值
+                    disc:
+                        - 实心圆
+                    circle:
+                        - 空心圆
+                    square:
+                        - 方块
+                    lower-roman:
+                        - 小写罗马数字
+                    upper-roman:
+                        - 大写罗马数字
+                    lower-alpha:
+                        - 小写英文字母
+                    upper-alpha:
+                        - 大写英文字母
+                    none:
+                        - 不使用项目符合
+                    cjk-ideographic:
+                        - 浅白色的表的数字
+                    georgian:
+                        - 传统的乔治数字
+                    lower-greek:
+                        - 基本的希腊小写字母
+                    hebrew:
+                        - 传统的希伯莱数字
+                    hiragana:
+                        - 日本平假名字符
+                    hiragana-iroha:
+                        - 日本平假名序号
+                    katakana:
+                        - 日本片假名字符
+                    katakana-iroha:
+                        - 日本片假名序号
+                    lower-latin:
+                        - 小写拉丁字母
+                    upper-latin:
+                        - 大写拉丁字母
+                ```
+                ```html
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title> 自定义编号 </title>
+                        <style type="text/css">
+                    
+                            div>div {
+                                counter-increment: myconter;
+                            }
 
-                        div>div:before {
-                            content: '第' counter(myconter, lower-greek) '行.';
-                        }
+                            div>div:before {
+                                content: '第' counter(myconter, lower-greek) '行.';
+                            }
 
-                    </style>
-                </head>
-                <body>
-                    <div>
-                        <div>白日依山进，</div>
-                        <div>黄河入海流。</div>
-                        <div>欲穷千里目，</div>
-                        <div>更上一层楼。</div>
-                    </div>
-                </body>
-                </html>
-            ```
+                        </style>
+                    </head>
+                    <body>
+                        <div>
+                            <div>白日依山进，</div>
+                            <div>黄河入海流。</div>
+                            <div>欲穷千里目，</div>
+                            <div>更上一层楼。</div>
+                        </div>
+                    </body>
+                    </html>
+                ```
+                ```html
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title> 添加多级编号 </title>
+                        <style type="text/css">
+                    
+                            div>h2 {
+                                counter-increment: categorycounter;
+                            }
 
+                            div>div {
+                                counter-increment: subcounter;
+                            }
+
+                            div>h2:before {
+                                content: counter(categorycounter, georgian) '.';
+                                font-size: 20pt;
+                                font-weight: bold;
+                            }
+
+                            div>div:before {
+                                content: '第' counter(subcounter, cjk-ideographic) '本.';
+                                font-size: 14pt;
+                                font-weight: bold;
+                                margin-left: 24px;
+                            }
+
+                        </style>
+                    </head>
+                    <body>
+                        <div>
+                            <h2>标题1</h2>
+                            <div>黄河入海流。</div>
+                            <div>欲穷千里目，</div>
+                            <div>更上一层楼。</div>
+                            <h2>标题2</h2>
+                            <div>欲穷千里目，</div>
+                            <div>更上一层楼。</div>
+                        </div>
+                    </body>
+                    </html>
+                ```
+        - css3 新增伪类选择器：
+            - 结构性伪类选择器：
+                - 语法：
+                    ```css
+                        Selector:root
+                            - 匹配文档的根元素。
+                        Selector:first-child
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的第一个子节点的元素。
+                        Selector:last-child
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的最后一个子节点的元素。
+                        Selector:nth-child(n）
+                            - 匹配符合 Selector 选择器，而且必须是父元素的第 n 个子节点元素。
+                        Selector:nth-last-child(n)
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的倒数第 n 个子节点的元素。
+                        Selector:only-child
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的唯一子节点的元素。
+                        Selector:first-of-type
+                            - 匹配符合 Selector 选择器，而且是和他同类型，同级的兄弟元素中的第一个元素。
+                        Selector:last-of-type
+                            - 匹配符合 Selector 选择器，而且是他同类型、同等级的兄弟元素中的最后一个元素。
+                        Selector:nth-of-type(n)
+                            - 匹配符合 Selector 选择器，而且是与他同类、同级别的兄弟元素中的第 n 个元素。
+                        Selector:nth-last-of-type(n)
+                            - 匹配符合 Selector 选择器，而且是和他同类型、同级的兄弟元素中倒数第 n 个元素。
+                        Selector:only-of-type
+                            - 匹配符合 Selector 选择器，而且与他同类型、同级的兄弟元素中的唯一一个元素。
+                        Selector:empty
+                            - 匹配符合 Selector 选择器，而且其内部没有任何子元素的元素。
+                        Selector:lang(lang)
+                            - 匹配符合 Selector 选择器，而且其内容是特定语言的元素。
+                        Selector:nth-child(odd/event)
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的第奇数个/偶数个字节点的元素。
+                        Selector:nth-last-child(odd/event)
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的倒数第奇数个/偶数个子节点的元素。
+                        Selector:nth-child(xn+y)
+                            - 匹配符合 Selector 选择器，而且必须是父元素的第 xn + y 的子节点元素。
+                        Selector:nth-last-child(xn+y)
+                            - 匹配符合 Selector 选择器，而且必须是其父元素的倒数第 xn + y 个子节点的元素。
+                    ```
+                - 案例：
+                    - :root
+                        ```html
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> :root 伪类选择器 </title>
+                                <style type="text/css">
+                                    :root {
+                                        background-color: red;
+                                    }
+
+                                    body {
+                                        background-color: #888;
+                                    }
+
+                                </style>
+                            </head>
+                            <body>
+                                    标题
+                                <div>
+                                    白日依山尽，
+                                    黄河入海流。
+                                    欲穷千里目，
+                                    更上一层楼。
+                                </div>
+                            </body>
+                            </html>
+                        ``
+                    - 多个选择器：
+                        ```html
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> 多个伪类选择器 </title>
+                                <style type="text/css">
+                                    li:first-child {
+                                        border: 1px solid black;
+                                    }
+
+                                    li:last-child {
+                                    background-color:  yellow;
+                                    }
+
+                                    li:nth-child(2) {
+                                        color: #888;
+                                    }
+
+                                    li:nth-last-child(2) {
+                                        font-weight: bold;
+                                    }
+
+                                    span:only-child {
+                                        font-size: 30pt;
+                                        font-family: "隶书";
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <ol>
+                                    <li>登鹳雀楼</li>
+                                    <li>白日依山尽，</li>
+                                    <li>黄河入海流。</li>
+                                    <li>欲穷千里目，</li>
+                                    <li>更上一层楼。</li>
+                                </ol>
+
+                                <ul>
+                                    <li id="java">君不见黄河之水天上来⑵，奔流到海不复回。</li>
+                                    <li id="javaee">君不见高堂明镜悲白发，朝如青丝暮成雪⑶。</li>
+                                    <li id="ajax">人生得意须尽欢⑷，莫使金樽空对月。</li>
+                                    <li id="xml">天生我材必有用，千金散尽还复来。</li>
+                                    <li id="ejb"><span>烹羊宰牛且为乐，会须一饮三百杯⑸。</span></li>
+                                </ul>
+                                <span>岑夫子，丹丘生⑹，将进酒，杯莫停⑺。</span>
+                            </body>
+                            </html>
+
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> 多个伪类选择器 </title>
+                                <style type="text/css">
+
+                                    li:nth-child(odd) {
+                                        margin: 10px;
+                                        border: 2px solid black;
+                                    }
+
+                                    li:nth-child(even) {
+                                        padding: 10px;
+                                        border: 2px solid black;
+                                    }
+                                </style>
+                            </head>
+                            <body>
+
+                                <ul>
+                                    <li id="java">君不见黄河之水天上来⑵，奔流到海不复回。</li>
+                                    <li id="javaee">君不见高堂明镜悲白发，朝如青丝暮成雪⑶。</li>
+                                    <li id="ajax">人生得意须尽欢⑷，莫使金樽空对月。</li>
+                                    <li id="xml">天生我材必有用，千金散尽还复来。</li>
+                                    <li id="ejb"><span>烹羊宰牛且为乐，会须一饮三百杯⑸。</span></li>
+                                </ul>
+
+                            </body>
+                            </html>
+
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> 多个伪类选择器 </title>
+                                <style type="text/css">
+
+                                    li:nth-last-child(3n+1) {
+                                        border: 2px solid black;
+                                    }
+
+                                </style>
+                            </head>
+                            <body>
+
+                                <ul>
+                                    <li id="java">君不见黄河之水天上来⑵，奔流到海不复回。</li>
+                                    <li id="javaee">君不见高堂明镜悲白发，朝如青丝暮成雪⑶。</li>
+                                    <li id="ajax">人生得意须尽欢⑷，莫使金樽空对月。</li>
+                                    <li id="xml">天生我材必有用，千金散尽还复来。</li>
+                                    <li id="ejb"><span>烹羊宰牛且为乐，会须一饮三百杯⑸。</span></li>
+                                </ul>
+
+                            </body>
+                            </html>
+                        
+                        ```
