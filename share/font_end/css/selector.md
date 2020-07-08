@@ -33,7 +33,7 @@
         ```css
             <style type="text/css">
                 样式单文件定义
-            </style>
+            </style>  
         ```
     - 使用行内样式：
         ```css
@@ -144,7 +144,7 @@
                     </body>
                     </html>
                 ```
-        - id选择器：
+        - ID选择器：
             - 语法：
                 ```css
                     #idValue {}
