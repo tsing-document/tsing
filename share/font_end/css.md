@@ -827,6 +827,19 @@
                             - 匹配符合 Selector 选择器，而且必须是父元素的第 xn + y 的子节点元素。
                         Selector:nth-last-child(xn+y)
                             - 匹配符合 Selector 选择器，而且必须是其父元素的倒数第 xn + y 个子节点的元素。
+                        Selector:first-of-type
+                        Selector:last-of-type
+                        Selector:nth-of-type
+                        Selector:nth-last-of-type
+                        Selector:only-of-type
+                        Selector:nth-of-type(odd/event)
+                            - 匹配符合 Selector 选择器，而且必须是和其他同类型，同级别元素的第奇数个元素。
+                        Selector:nth-last-of-type(odd/event)
+                            - 匹配符合 Selector 选择器，而且必须是和其他同累心、同级别元素的第偶数个元素。
+                        Selector:nth-of-type(xn+y)
+                            - 匹配符合 Selector 选择器，而且必须是和其同类型、同级别元素的第 xn + y 的元素。
+                        Selector:nth-last-of-type(xn+y)
+                            - 匹配符合 Selector 选择器，而且必须是和其同类型、同级元素的倒数第 xn + y 个元素。
                     ```
                 - 案例：
                     - :root
@@ -968,5 +981,94 @@
 
                             </body>
                             </html>
-                        
+
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> 多个伪类选择器 </title>
+                                <style type="text/css">
+
+                                    p {
+                                        padding: 5px;
+                                    }
+
+                                    /* 匹配 p 选择器，且是与他同类型、同级别兄弟元素的第 1 个css的样式 */
+                                    p:first-of-type {
+                                        border: 1px solid black;
+                                    }
+
+                                    /* 匹配 p 选择器，且是和他同类型、同级兄弟元素中的倒数第一个 css 样式 */
+                                    p:last-of-type {
+                                        background-origin: #aaa;
+                                    }
+
+                                    /* 匹配 p 选择器，且是和他同类型、同级兄弟元素中的第2个css样式 */
+                                    p:nth-of-type(2) {
+                                        color: #888;
+                                    }
+
+                                    /* 匹配p选择器，而且是和他同类型、同级兄弟元素中倒数第2个css样式 */
+                                    p:nth-last-of-type(2) {
+                                        font-weight: bold;
+                                    }
+
+                                </style>
+                            </head>
+                            <body>
+                                <div>www.crayzit.org</div>
+                                <p>www.fkjava.com</p>
+                                <p>www.fkit.org</p>
+                                <p>疯狂 java 联盟</p>
+                                <p>疯狂软件教育中心</p>
+                                <hr/>
+                                <div>
+                                    <div id="java">疯狂 Java 讲义</div>
+                                    <div id="javaee">轻量级 java ee 企业应用实战</div>
+                                    <p id="ajax">疯狂ajax讲义</p>
+                                    <p id="xml">疯狂xml讲义</p>
+                                    <p id="ejb">经典java ee企业应用实战</p>
+                                    <p id="android">疯狂 andrioid 讲义</p>
+                                    <div id="swift">疯狂 swift 讲义</div>
+                                </div>
+                            </body>
+                            </html>
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title> :nth-of-type </title>
+                                <style type="text/css">
+
+                                    p {
+                                        padding: 2px;
+                                    }
+
+                                    /* 匹配 p 选择器，且是与他同类型、同级别兄弟元素的第奇数个节点 css 样式 */
+                                    p:nth-of-type(odd) {
+                                        margin: 10px;
+                                        border: 2px dotted black;
+                                    }
+
+                                    /* 匹配 p 选择器，且是和他同类型、同级兄弟元素中的第偶数 css 样式 */
+                                    p:nth-of-type(even)  {
+                                        padding: 4px;
+                                        border: 1px solid black;
+                                    }
+
+                                </style>
+                            </head>
+                            <body>
+                                <div id="java">疯狂 java 讲义</div>
+                                <div id="javaee">轻量级java ee企业应用实战</div>
+                                <p id="ajax">疯狂 ajax 讲义</p>
+                                <p id="xml">疯狂xml讲义</p>
+                                <p id="ejb">经典javaee企业应用实战</p>
+                                <p id="android">疯狂 android 讲义</p>
+                                <p>疯狂java联盟</p>
+                                <div id="swift">疯狂 swift 讲义</div>
+                            </body>
+                            </html>
                         ```
