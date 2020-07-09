@@ -1,5 +1,5 @@
-# 第二章：字体和文本相关属性
-- ### 一、 字体相关属性：
+### 字体相关属性：
+- 语法：
     - font：
         - 这是一个复合属性，其属性的值形如 `font-style`、`font-variant`、`font-weight`、`font-size`、`line-height`、`font-family` 的复合属性值。使用 `font` 属性可以同时控制文字的样式、字体粗体、字体大小、字体等属性，为了更具体的进行控制，通常不建议使用该属性。
     - color：
@@ -50,3 +50,105 @@
         - 设置字符之间的间隔。
     - word-spacing：
         - 设置单词之间的间隔。
+
+- 案例：
+    ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> 字体 </title>
+            <style type="text/css">
+                #aa {
+                    font-size: 16pt;
+                    font-family: "Courier New";
+                    font-size-adjust: 0.41;
+                }
+                
+                #bb {
+                    font-size: 16pt;
+                    font-family: "Roman";
+                    font-size-adjust: 0.66;
+                }
+
+                #cc {
+                    font-size: 16pt;
+                    font-family: "Impact";
+                    font-size-adjust: 0.93;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- 字体颜色 color -->
+            <span style="color: #888888;">测试文字 color: #888888;</span><br/>
+            <span style="color: red;">测试文字 color: red;</span><br/>
+
+            <!-- 文字字体 font-family -->
+            <span style="font-family: '隶书';">测试文字 font-family: '隶书';</span><br/>
+
+            <!-- 文字大小 font-size -->
+            <span style="font-size: 34pt;">测试文字 font-size: 34pt;</span><br/>
+            <span style="font-size: xx-small;">测试文字 font-size: xx-small</span><br/>
+            <span style="font-size: x-small;">测试文字 font-size: x-small;</span><br/>
+            <span style="font-size: samll;">测试文字 font-size: samll</span><br/>
+            <span style="font-size: medium;">测试文字 font-size: medium</span><br/>
+            <span style="font-size: large">测试文字 font-size: large</span><br/>
+            <span style="font-size: x-large;">测试文字 font-size: x-large;</span><br/>
+            <span style="font-size: xx-large;">测试文字 font-size: xx-large</span><br/>
+            <span style="font-size: larger;">测试文字 font-size: larger</span><br/>
+            <span style="font-size: smaller">测试文字 font-size: smaller</span><br/>
+        
+            <!-- 文字横向拉伸 font-stretch-->
+            <span style="font-stretch: narrower;">测试文字 font-stretch: narrower;</span><br/>
+            <span style="font-stretch: wider;">测试文字 font-stretch: narrower;</span><br/>
+
+            <!-- 设置文字风格 font-style -->
+            <span style="font-style: italic;">测试文字 font-style: italic;</span><br/>
+
+            <!-- 设置字体是否加粗 font-weight -->
+            <span style="font-weight: bold;">测试文字 font-weight: bold;</span><br/>
+            <span style="font-weight: 900;">测试文字 font-weight: 900;</span><br/>
+
+            <!-- 设置字体是否有修饰线 text-decoration-->
+            <span style="text-decoration: blink;">测试文字 text-decoration: blink;</span><br/>
+            <span style="text-decoration: underline;">测试文字 text-decoration: underline;</span><br/>
+            <span style="text-decoration: line-through;">测试文字 text-decoration: line-through;</span><br/>
+
+            <!-- 设置文字大写字母格式 font-variant -->
+            <span style="font-variant: small-caps;">测试文字 font-variant: small-caps;</span><br/>
+
+            <!-- 设置文字的大小写 text-transform -->
+            <span style="text-transform: uppercase;">测试文字 text-transform: uppercase;</span><br/>
+            <span style="text-transform: capitalize;">测试文字 text-transform: capitalize;</span><br/>
+
+            <!-- 设置文字的行高 line-hight -->
+            <span style="line-height: 50pt;">测试文字 line-height: 50pt;</span><br/>
+
+            <!-- 设置字符之间的间隔 letter-spacing -->
+            <span style="letter-spacing: 50pt;">测试文字 letter-spacing: 50pt;</span><br/>
+
+            <!-- 设置单词之间的间隔 word-spacing -->
+            <span style="word-spacing: 30pt;">测试文字 word-spacing: 30pt;</span><br/>
+
+            <!-- 设置阴影 text-shadow -->
+            <!-- 解释：
+                color: 指定阴影的颜色。
+                xoffset: 指定阴影在横向上的偏移。
+                yoffset: 指定阴影在纵向上的偏移。
+                redius:  指定阴影的模糊半径。
+            -->
+            <p style="text-shadow: red  5px 5px 2px;">测试文字 - text-shadow</p>
+            <p style="text-shadow: 5px 5px 2px; color: blue;">测试文字 - text-shadow</p>
+            <p style="text-shadow: -5px -5px 2px; color: gray;">测试文字 - text-shadow</p>
+            <p style="text-shadow: -5px 5px 2px; color: yellow;">测试文字 - text-shadow </p>
+            <p style="text-shadow: 5px -5px 2px; color: green;">测试文字 - text-shadow</p>
+
+            <!-- 微调字体 font-size-adjust *** 只有火狐支持-->
+            <div id="aa">The Yellow River flows into the sea</div>
+            <div id="bb">The Yellow River flows into the sea</div>
+            <div id="cc">The Yellow River flows into the sea</div>
+        </body>
+        </html>
+
+    ```
