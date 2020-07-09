@@ -43,4 +43,6 @@
 - 二、css选择器
     - [css选择器](./selector.md)
     - [伪元素选择器](./pseudo.selector.md)
-- ## [字体和文本相关属性](./typeface.md)
+
+## 第二章：字体和文本相关属性
+    - [字体](./typeface.md)

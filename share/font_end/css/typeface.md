@@ -39,4 +39,14 @@
     - text-decoration：
         - 该属性用于控制文字是否有修饰线，如下滑线等。该属性的值有 none（无修饰）、blink（闪烁）、underline（下画线）、line-through（中画线）和overline（上画线）。
     - font-variant：
-        - 该属性用于设置文字的写字母的格式。该属性支持
+        - 该属性用于设置文字的写字母的格式。
+    - text-shadow：
+        - 设置文字的阴影效果。
+    - text-transform：
+        - 设置文字的大小。
+    - line-hight：
+        - 设置字体的行高。
+    - letter-spacing：
+        - 设置字符之间的间隔。
+    - word-spacing：
+        - 设置单词之间的间隔。
