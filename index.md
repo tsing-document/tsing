@@ -4,7 +4,6 @@
 - [Markdown](/pages/markdown/index.md)
 - [前端](/pages/fragmentation/font-end/index.md)
 - [让人心动的算法](/pages/fragmentation/algorithm/index.md)
-- [Git](/pages/versioncontrol/git/index.md)
 - [Yarn](/pages/package/yarn/index.md)
 - [Nginx](/pages/back-end/nginx/index.md)
 
