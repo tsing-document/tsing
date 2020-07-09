@@ -40,5 +40,7 @@
                 style="属性名1:属性值1;属性名2:属性值2;"
             ```
 
-- 二、[及联样式和css选择器](./selector.md)
+- 二、css选择器
+    - [css选择器](./selector.md)
+    - [伪元素选择器](./pseudo.selector.md)
 - ## [字体和文本相关属性](./typeface.md)
