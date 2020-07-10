@@ -69,237 +69,77 @@
         /* 7.组合选择器 */
         Selector1,Selector2,Selector3,... {...}
     ```
+
 - 案例：
-    ```html
+    - 元素选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>元素选择器</title>
+                <style type="text/css">
+                </style>
+            </head>
+            <body>
+                <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
+                    元素选择器 - 元素选择器
+                </div>
+            </body>
+            </html>
+        ```
+    - 效果：
         <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title> 选择器 </title>
+            <title>元素选择器</title>
             <style type="text/css">
-                /* 1.元素选择器 */
-                div {
-                    margin: 10px;
-                    background-color: yellow;
-                    border: 2px solid black;
                 }
-
-                /* 2.属性选择器 */
-                    /* E {...} */
-                    div {
-                        margin: 10px;
-                        background-color: yellow;
-                        border: 2px solid black;
-                    }
-
-                    /* E[attr] {...} */
-                    div[id] {
-                        background-color: brown;
-                    }
-
-                    /* E[attr=value] {...} */
-                    div[id*=xxx] {
-                        background-color: chartreuse;
-                    }
-
-                    /* E[attr ~=value] {...} */
-                    div[title="title"] {
-                        background-color: blue;
-                    }
-
-                    /* E[attr ｜=value] { ... } */
-                    div[lang|=en] {
-                        background-color:green;
-                    }
-
-                    /* E[att^="value"] {...} */
-                    div[id^=yy] {
-                        background-color: hotpink;
-                    }
-
-                    /* E[att$="value"] {...} */
-                    div[id$=zz] {
-                        background-color: khaki;
-                    }
-
-                    /* E[att*="value"] {...} */
-                    div[id*=uu] {
-                        background-color: lightgreen;
-                    }
-
-                /* 3.ID选择器 */
-                    #aa {
-                        background-color: mediumblue;
-                        border: 1px solid black;
-                    }
-                
-                /* 4.class选择器 */
-                    .classSelector {
-                        background: cadetblue;
-                    }
-                
-                /* 5.包含选择器 */
-                    div {
-                        background-color: #dddddd;
-                    }
-
-                    div .a {
-                        background-color: #888;
-                    }
-
-                /* 6.子选择器 */
-                    div {
-                        background-color:darkslategray;
-                        margin: 5px;
-                    }
-
-                    div>.a {
-                        background-color: darkslategray;
-                    }
-
-                /* 7.组合选择器 */
-                    section, h1, p {
-                        background-color: plum;
-                    }
-                
-                /* 8.兄弟选择器(css3.0新增) */
-                    #android ~ .long {
-                        background-color: #00ff00;
-                    }
-                    
             </style>
         </head>
         <body>
-            <!-- 1.元素选择器 -->
-                <div>元素选择器 - 元素选择器</div>
-
-            <!-- 2.属性选择器 -->
-                <!-- E {...} -->
-                <div>
-                    属性选择器 - 指定该css样式对所有的 e 元素起作用。
-                </div>
-
-                <!-- E[attr] {...} -->
-                <div id="java">
-                    属性选择器 - 指定该css样式具有的 attr 属性的 e 元素起作用。
-                </div>
-                <div id="javaee">
-                    属性选择器 - 指定该css样式具有的 attr 属性的 e 元素起作用。
-                </div>
-
-                <!-- E[attr=value] {...} -->
-                <div id="xxx">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性为value的e元素起作用。
-                </div>
-
-                <!-- E[attr ~=value] {...} -->
-                <div title="title">
-                    属性选择器 - 指定该 css 样式对所有包含 attr 属性，且 attr 属性的值以空格隔开的系列值，其中某个值为 value 的 e 元素起作用。
-                </div>
-
-                <!-- E[attr ｜=value] { ... } --> 
-                <div lang="en">
-                    属性选择器 - 指定该css样式对所有包含attr属性，且attr属性的值为以连字符分隔的系列值，其中第一个值为 value 的 tag 元素起作用。
-                </div>
-                <div lang="en-us">
-                    属性选择器 - Hi!
-                    指定该css样式对所有包含attr属性，且attr属性的值为以连字符分隔的系列值，其中第一个值为 value 的 tag 元素起作用。
-                </div>
-
-                <!-- E[att^="value"] {...} -->
-                <div id="yy">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为以value开头的字符串的 e元素起作用。
-                </div>
-                <div id="yy-xx">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为以value开头的字符串的 e元素起作用。
-                </div>
-
-                <!-- E[att$="value"] {...} -->
-                <div id="zz">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为以value结尾的字符串的 e 元素起作用。
-                </div>
-                <div id="xx-zz">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为以value结尾的字符串的 e 元素起作用。
-                </div>
-
-                <!-- E[att*="value"] {...} -->
-                <div id="uu">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为包含value的字符串的e元素起作用。
-                </div>
-                <div id="uu-zz">
-                    属性选择器 - 指定该css样式对所有包含 attr 属性，且attr属性的值为包含value的字符串的e元素起作用。
-                </div>
-            
-            <!-- 3.ID选择器 -->
-                <div id="aa">
-                    ID选择器 - ID选择器
-                </div>
-
-            <!-- 4.class选择器 -->
-                <div class="classSelector">
-                    class 选择器 - class 选择器
-                </div>
-
-            <!-- 5.包含选择器 -->
-                <div>
-                    包含选择器 - 没有任何属性的 div 元素
-                </div>
-                <div>
-                    <section>
-                        <div class="a">
-                            包含选择器 - 处于 div 之内且 class 属性为 a 的元素
-                        </div>
-                    </section>
-                </div>
-                <p class="a">
-                    包含选择器 - 没有处于 div 之内，但 class 属性为a的元素。
-                </p>
-
-            <!-- 6.子选择器 -->
-                <div>
-                    子选择器 - 没有任何属性的 div 元素
-                </div>
-                <div>
-                    <p class="a">
-                        子选择器 - class属性为a且div的子节点的元素
-                    </p>
-                </div>
-                <div>
-                    <section>
-                        <p class="a">
-                        子选择器 - class属性为a且处于div内部的元素
-                        </p>
-                    </section>
-                </div>
-            
-            <!-- 7.组合选择器 -->
-                <h1>
-                    组合选择器 - h1标签
-                </h1>
-                <section>
-                    组合选择器 - section
-                </section>
-                <p>
-                    组合选择器 - p标签
-                </p>
-
-            <!-- 8.兄弟选择器(css3.0新增) -->
-                <div>
-                    兄弟选择器(css3.0新增) - 疯狂 java 讲义
-                </div>
-                <div class="long">
-                    兄弟选择器(css3.0新增) - 轻量级java ee 企业应用实战
-                </div>
-                <div id="android">
-                    兄弟选择器(css3.0新增) - 疯狂andriod讲义
-                </div>
-                <p class="long">
-                    兄弟选择器(css3.0新增) - 经典java ee企业应用实战
-                </p>
-                <div class="long">
-                    兄弟选择器(css3.0新增) - 疯狂 html5/ css3 / js
-                </div>
+            <div style="margin: 10px;
+                        background-color: yellow;
+                        border: 2px solid black;">
+                元素选择器 - 元素选择器
+            </div>
         </body>
         </html>
-    ```
+    - 属性选择器：
+        - E {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title></title>
+                    <style type="text/css">
+                    </style>
+                </head>
+                <body>
+                    <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
+                        属性选择器 - E {...}
+                    </div>
+                </body>
+                </html>
+            ```
+        - 效果：
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title></title>
+                <style type="text/css">
+                </style>
+            </head>
+            <body>
+                <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
+                    属性选择器 - E {...}
+                </div>
+            </body>
+            </html>
