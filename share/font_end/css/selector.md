@@ -128,15 +128,6 @@
                 </html>
             ```
         - 效果：
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title></title>
-                <style type="text/css">
-                </style>
-            </head>
             <body>
                 <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
                     属性选择器 - E {...}
