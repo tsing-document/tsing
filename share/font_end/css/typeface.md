@@ -1,55 +1,120 @@
 ### 字体相关属性：
+- 概要：
+    - font
+    - color
+    - font-family
+    - font-size
+        - xx-small
+        - x-small
+        - small
+        - medium
+        - large
+        - x-large
+        - xx-large
+        - larger
+        - smaller
+        - length
+    - font-size-adjust
+    - font-stretch
+        - narrower
+        - wider
+    - font-style
+        - normal
+        - italic
+        - oblique
+    - font-weight
+    - text-decoration
+        - none
+        - blink
+        - underline
+        - line-through
+        - overline
+    - font-variant
+        - normal
+        - small-caps
+    - text-shadow
+    - text-transform
+        - normal
+        - capitaliza
+        - uppercase
+        - lowercase
+    - line-height
+    - letter-spacing
+    - word-spacing
+
 - 语法：
-    - font：
-        - 这是一个复合属性，其属性的值形如 `font-style`、`font-variant`、`font-weight`、`font-size`、`line-height`、`font-family` 的复合属性值。使用 `font` 属性可以同时控制文字的样式、字体粗体、字体大小、字体等属性，为了更具体的进行控制，通常不建议使用该属性。
-    - color：
-        - 该属性用于控制文字颜色，该属性的值可以是任何有效的颜色值，包含字符串类型的颜色名、十六进制的颜色值，或使用 `reb()` 函数设置 RGB 值等，甚至包含 css3.0 提供的 hsl 颜色值等。
-    - font-family：
-        - 设置文字的字体，因为字体需要浏览器内嵌字体的支持，该属性可以设置多个显示字体，浏览器按该属性指定的多个字体一次搜索，以优先找到的字体来显示文字。多个属性值之间用（，）隔开。
-    - font-size：
-        - 该属性用于设置文字的字体大小，此处的字体大小既可以是相对的字体大小，也可以是绝对的字体大小。该属性支持如下的属性值。
-            - xx-small：
-                - 绝对字体尺寸。最小字体。
-            - x-small：
-                - 绝对字体尺寸。较小字体。
-            - samll：
-                - 绝对字体尺寸。小字体。
-            - medium：
-                - 绝对字体尺寸。正常大小的字体。这是默认值。
-            - large：
-                - 绝对字体尺寸。大字体。
-            - x-large：
-                - 绝对字体尺寸。较大字体。
-            - xx-large：
-                - 绝对字体尺寸。最大字体。
-            - larger：
-                - 相对字体尺寸。相对于父元素的字体进行相对增大。
-            - smaller：
-                -  相对字体尺寸。相对于父元素中的字体进行相对减少。
-            - length：
-                - 直接设置字体大小。该值既可以设置为一个百分比值，意味着该字体大小是父元素中字体大小的百分比值：也可设置为一个数值 + 长度单位。
-    - font-size-adjust：
-        - 该属性用于控制对不同字体尺寸进行微调。该属性可以指定为 none(不进行任何调整)或用一个数值代表调整比例。
-    - font-stretch：
-        - 该属性用于改变文字横向的拉伸，该属性的默认值为normal，既不拉伸。还有两个属性值，是 narrower 和 wider，前者是横向压缩，后者是横向拉伸。
-    - font-style：
-        - 该属性用于设置文字风格，是否采用斜体等。该属性的常用属性有normal、italic、oblique,这些属性值依次表示设置文字正常、斜体、倾斜字体。
-    - font-weight：
-        - 该属性用于设置字体是否加粗。该属性的值表示加粗的程度用 lighter、norrmal、bold、bolder 等属性值表示。
-    - text-decoration：
-        - 该属性用于控制文字是否有修饰线，如下滑线等。该属性的值有 none（无修饰）、blink（闪烁）、underline（下画线）、line-through（中画线）和overline（上画线）。
-    - font-variant：
-        - 该属性用于设置文字的写字母的格式。
-    - text-shadow：
-        - 设置文字的阴影效果。
-    - text-transform：
-        - 设置文字的大小。
-    - line-hight：
-        - 设置字体的行高。
-    - letter-spacing：
-        - 设置字符之间的间隔。
-    - word-spacing：
-        - 设置单词之间的间隔。
+    ```css
+        /* 1.符合属性，将下列的详细的属性进行组合 */
+        font
+
+        /* 2.控制文字的颜色 */
+        color
+
+        /* 3.设置文字的字体 */
+        font-family
+
+        /* 4.设置字体的大小，下列是可选值 */
+        font-size
+            - xx-small
+            - x-small
+            - small
+            - medium
+            - large
+            - x-large
+            - xx-large
+            - larger
+            - smaller
+            - length
+
+        /* 5.对不同字体进行字体尺寸进行微调 */
+        font-size-adjust
+
+        /* 6.改变文字的横向拉伸，下面是可选值 */
+        font-stretch
+            - narrower
+            - wider
+
+        /* 7.设置文字的风格，下面是可选值 */
+        font-style
+            - normal
+            - italic
+            - oblique
+
+        /* 8.设置字体是否加粗 */
+        font-weight
+
+        /* 9.下划线是否有修饰线，下面是可选值 */
+        text-decoration
+            - none
+            - blink
+            - underline
+            - line-through
+            - overline
+        
+        /* 10.设置文字的大写字母的格式，下面是可选值 */
+        font-variant
+            - normal
+            - small-caps
+
+        /* 11.设置阴影效果 */
+        text-shadow
+
+        /* 12.设置文字的大小写，下面是可选值  */
+        text-transform
+            - normal
+            - capitaliza
+            - uppercase
+            - lowercase
+        
+        /* 13.设置字体的行高 */
+        line-height
+
+        /* 14.设置字体之间的字符之间的间隔 */
+        letter-spacing
+
+        /* 15.单词之间的间隔 */
+        word-spacing
+    ```
 
 - 案例：
     ```html
