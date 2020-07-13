@@ -83,15 +83,15 @@
                 </style>
             </head>
             <body>
-                <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
+                <div style="width: 100%;
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;">
                     元素选择器 - 元素选择器
                 </div>
             </body>
             </html>
         ```
-    - 效果：  
-        ![元素选择器](./images/1594374018517.jpg)
-        ![元素选择器](./images/1594374142848.jpg)
     - 属性选择器：
         - E {...}
             ```css
@@ -100,21 +100,367 @@
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title></title>
+                    <title>属性选择器</title>
                     <style type="text/css">
                     </style>
                 </head>
                 <body>
-                    <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
+                    <div style="width: 100%;
+                                height: 100px;
+                                background-color: yellow;
+                                border: 2px solid black;">
                         属性选择器 - E {...}
                     </div>
                 </body>
                 </html>
             ```
-        - 效果：
+        - E[attr] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        div[id] {
+                            width: 100%;
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="java">
+                        属性选择器 - 指定该css样式具有的 attr 属性的 e 元素起作用。
+                    </div>
+                </body>
+                </html>
+            ```
+        - E[attr=value] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        div[id=javaee] {
+                            width: 100%;
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="javaee"></div>
+                </body>
+                </html>
+            ```
+        - E[attr～=value] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        div[id~=java] {
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                            margin: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="java ee"></div>
+                    <div id="java script"></div>
+                </body>
+                </html>
+            ```
+        - E[attr |=value ] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        /*
+                            选择 lang 属性值以 “en” 开头的元素b，并设置样式。
+                        */
+                        div[lang |= java] {
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                            margin: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div lang="java-ee"></div>
+                    <div lang="java-script"></div>
+                </body>
+                </html>
+            ```
+        - E[att^="value"] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        /*
+                            设置 class 属性值以 "test" 开头的所有 div 元素的背景色。
+                        */
+                        div[class ^= java] {
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                            margin: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="java-ee"></div>
+                    <div class="java-script"></div>
+                </body>
+                </html>
+            ```
+        - E[att$="value"] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        /*
+                            设置 class 属性值以"java"结尾的所有div元素的背景颜色。
+                        */
+                        div[class $= java] {
+                            height: 100px;
+                            background-color: red;
+                            border: 2px solid black;
+                            margin: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="ee-java"></div>
+                    <div class="script-java"></div>
+                </body>
+                </html>
+            ```
+        - E[attr*=value] {...}
+            ```css
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>属性选择器</title>
+                    <style type="text/css">
+                        div[id*=java] {
+                            height: 100px;
+                            background-color: yellow;
+                            border: 2px solid black;
+                            margin: 10px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="javaee"></div>
+                    <div id="javascript"></div>
+                </body>
+                </html>
+            ```
+    - ID选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>ID选择器</title>
+                <style type="text/css">
+                    #se {
+                        height: 100px;
+                        background-color: red;
+                        border: 2px solid black;
+                        margin: 10px;
+                    }
+                </style>
+            </head>
             <body>
-                <div style="margin: 10px; background-color: yellow; border: 2px solid black;">
-                    属性选择器 - E {...}
+                <div id="se"></div>
+            </body>
+            </html>
+        ```
+    - class选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>class选择器</title>
+                <style type="text/css">
+                    .se {
+                        height: 100px;
+                        background-color: green;
+                        border: 2px solid black;
+                        margin: 10px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="se"></div>
+            </body>
+            </html>
+        ```
+    - 包含选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>包含选择器</title>
+                <style type="text/css">
+                    div {
+                            background-color: #dddddd;
+                        }
+                    div .a {
+                        background-color: #888;
+                    }
+                </style>
+            </head>
+            <body>
+                <div>
+                    包含选择器 - 没有任何属性的 div 元素
+                </div>
+                <div>
+                    <section>
+                        <div class="a">
+                            包含选择器 - 处于 div 之内且 class 属性为 a 的元素
+                        </div>
+                    </section>
+                </div>
+                <p class="a">
+                    包含选择器 - 没有处于 div 之内，但 class 属性为a的元素。
+                </p>
+            </body>
+            </html>
+        ```
+    - 子选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>子选择器</title>
+                <style type="text/css">
+                    div {
+                            background-color:darkslategray;
+                            margin: 5px;
+                        }
+                    div>.a {
+                        background-color: red;
+                    }
+                </style>
+            </head>
+            <body>
+                <div>
+                    子选择器 - 没有任何属性的 div 元素
+                </div>
+                <div>
+                    <p class="a">
+                        子选择器 - class属性为a且div的子节点的元素
+                    </p>
+                </div>
+                <div>
+                    <section>
+                        <p class="a">
+                        子选择器 - class属性为a且处于div内部的元素
+                        </p>
+                    </section>
                 </div>
             </body>
             </html>
+        ```
+    - 组合选择器：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>组合选择器</title>
+                <style type="text/css">
+                    div, p, section {
+                            background-color:darkslategray;
+                            margin: 5px;
+                        }
+                </style>
+            </head>
+            <body>
+                <div>
+                    组合选择器 - div 元素。
+                </div>
+                <p>
+                    组合选择器 - p 元素。
+                </p>
+                <section>
+                    组合选择器 - section 元素。
+                </section>
+            </body>
+            </html>
+        ```
+    - 兄弟选择器(css3新增)：
+        ```css
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>css3 新增兄弟选择器</title>
+                <style type="text/css">
+                /*
+                    匹配id为android的元素后面、class属性为long的兄弟节点。
+                */
+                    #android ~ .long {
+                            background-color:red;
+                        }
+                </style>
+            </head>
+            <body>
+                <div>
+                    第一行
+                </div>
+                <div class="long">
+                    第二行
+                </div>
+                <div id="android">
+                    第三行
+                </div>
+                <p class="long">
+                    第三行
+                </p>
+                <div class="long">
+                    第四行
+                </div>
+            </body>
+            </html>
+        ```
+
