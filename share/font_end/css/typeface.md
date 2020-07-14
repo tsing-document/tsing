@@ -77,7 +77,7 @@
         /* 6.设置字体是否加粗 */
         font-weight
 
-        /* 7.下划线是否有修饰线，下面是可选值 */
+        /* 7.设置文字是否有修饰线，下面是可选值 */
         text-decoration
             - none
             - blink
@@ -90,30 +90,30 @@
             - normal
             - small-caps
 
-        /* 9.设置阴影效果 */
-        text-shadow
-
-        /* 10.设置文字的大小写，下面是可选值  */
+        /* 9.设置文字的大小写，下面是可选值  */
         text-transform
             - normal
             - capitaliza
             - uppercase
             - lowercase
         
-        /* 11.设置字体的行高 */
+        /* 10.设置字体的行高 */
         line-height
 
-        /* 12.设置字体之间的字符之间的间隔 */
+        /* 11.设置字体之间的字符之间的间隔 */
         letter-spacing
 
-        /* 13.单词之间的间隔 */
+        /* 12.单词之间的间隔 */
         word-spacing
 
-        /* 14.对不同字体进行字体尺寸进行微调 */
+        /* 13.对不同字体进行字体尺寸进行微调 */
         font-size-adjust
 
         /* 15.符合属性，将下列的详细的属性进行组合 */
         font
+
+        /* 9.设置阴影效果 */
+        text-shadow
 
     ```
 
@@ -146,14 +146,14 @@
             </style>
         </head>
         <body>
-            <!-- 1.字体颜色 color -->
+            <!-- 1.控制文字的颜色 color -->
             <span style="color: #888888;">测试文字 color: #888888;</span><br/>
             <span style="color: red;">测试文字 color: red;</span><br/>
 
-            <!-- 文字字体 font-family -->
+            <!-- 2.设置文字的字体 font-family -->
             <span style="font-family: '隶书';">测试文字 font-family: '隶书';</span><br/>
 
-            <!-- 文字大小 font-size -->
+            <!-- 3.设置字体的大小 font-size -->
             <span style="font-size: 34pt;">测试文字 font-size: 34pt;</span><br/>
             <span style="font-size: xx-small;">测试文字 font-size: xx-small</span><br/>
             <span style="font-size: x-small;">测试文字 font-size: x-small;</span><br/>
@@ -165,23 +165,23 @@
             <span style="font-size: larger;">测试文字 font-size: larger</span><br/>
             <span style="font-size: smaller">测试文字 font-size: smaller</span><br/>
         
-            <!-- 文字横向拉伸 font-stretch-->
+            <!-- 4.改变文字的横向拉伸 font-stretch-->
             <span style="font-stretch: narrower;">测试文字 font-stretch: narrower;</span><br/>
             <span style="font-stretch: wider;">测试文字 font-stretch: narrower;</span><br/>
 
-            <!-- 设置文字风格 font-style -->
+            <!-- 5.设置文字的风格 font-style -->
             <span style="font-style: italic;">测试文字 font-style: italic;</span><br/>
 
-            <!-- 设置字体是否加粗 font-weight -->
+            <!-- 6.设置字体是否加粗 font-weight -->
             <span style="font-weight: bold;">测试文字 font-weight: bold;</span><br/>
             <span style="font-weight: 900;">测试文字 font-weight: 900;</span><br/>
 
-            <!-- 设置字体是否有修饰线 text-decoration-->
+            <!-- 7.设置文字是否有修饰线 text-decoration-->
             <span style="text-decoration: blink;">测试文字 text-decoration: blink;</span><br/>
             <span style="text-decoration: underline;">测试文字 text-decoration: underline;</span><br/>
             <span style="text-decoration: line-through;">测试文字 text-decoration: line-through;</span><br/>
 
-            <!-- 设置文字大写字母格式 font-variant -->
+            <!-- 8.设置文字的大写字母的格式 font-variant -->
             <span style="font-variant: small-caps;">测试文字 font-variant: small-caps;</span><br/>
 
             <!-- 设置文字的大小写 text-transform -->
