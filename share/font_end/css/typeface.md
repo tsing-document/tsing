@@ -44,16 +44,13 @@
 
 - 语法：
     ```css
-        /* 1.符合属性，将下列的详细的属性进行组合 */
-        font
-
-        /* 2.控制文字的颜色 */
+        /* 1.控制文字的颜色 */
         color
 
-        /* 3.设置文字的字体 */
+        /* 2.设置文字的字体 */
         font-family
 
-        /* 4.设置字体的大小，下列是可选值 */
+        /* 3.设置字体的大小，下列是可选值 */
         font-size
             - xx-small
             - x-small
@@ -66,21 +63,21 @@
             - smaller
             - length
 
-        /* 5.改变文字的横向拉伸，下面是可选值 */
+        /* 4.改变文字的横向拉伸，下面是可选值 */
         font-stretch
             - narrower
             - wider
 
-        /* 7.设置文字的风格，下面是可选值 */
+        /* 5.设置文字的风格，下面是可选值 */
         font-style
             - normal
             - italic
             - oblique
 
-        /* 8.设置字体是否加粗 */
+        /* 6.设置字体是否加粗 */
         font-weight
 
-        /* 9.下划线是否有修饰线，下面是可选值 */
+        /* 7.下划线是否有修饰线，下面是可选值 */
         text-decoration
             - none
             - blink
@@ -88,32 +85,36 @@
             - line-through
             - overline
         
-        /* 10.设置文字的大写字母的格式，下面是可选值 */
+        /* 8.设置文字的大写字母的格式，下面是可选值 */
         font-variant
             - normal
             - small-caps
 
-        /* 11.设置阴影效果 */
+        /* 9.设置阴影效果 */
         text-shadow
 
-        /* 12.设置文字的大小写，下面是可选值  */
+        /* 10.设置文字的大小写，下面是可选值  */
         text-transform
             - normal
             - capitaliza
             - uppercase
             - lowercase
         
-        /* 13.设置字体的行高 */
+        /* 11.设置字体的行高 */
         line-height
 
-        /* 14.设置字体之间的字符之间的间隔 */
+        /* 12.设置字体之间的字符之间的间隔 */
         letter-spacing
 
-        /* 15.单词之间的间隔 */
+        /* 13.单词之间的间隔 */
         word-spacing
 
-        /* 5.对不同字体进行字体尺寸进行微调 */
+        /* 14.对不同字体进行字体尺寸进行微调 */
         font-size-adjust
+
+        /* 15.符合属性，将下列的详细的属性进行组合 */
+        font
+
     ```
 
 - 案例：
@@ -145,7 +146,7 @@
             </style>
         </head>
         <body>
-            <!-- 字体颜色 color -->
+            <!-- 1.字体颜色 color -->
             <span style="color: #888888;">测试文字 color: #888888;</span><br/>
             <span style="color: red;">测试文字 color: red;</span><br/>
 
