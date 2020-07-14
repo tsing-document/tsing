@@ -66,10 +66,7 @@
             - smaller
             - length
 
-        /* 5.对不同字体进行字体尺寸进行微调 */
-        font-size-adjust
-
-        /* 6.改变文字的横向拉伸，下面是可选值 */
+        /* 5.改变文字的横向拉伸，下面是可选值 */
         font-stretch
             - narrower
             - wider
@@ -114,6 +111,9 @@
 
         /* 15.单词之间的间隔 */
         word-spacing
+
+        /* 5.对不同字体进行字体尺寸进行微调 */
+        font-size-adjust
     ```
 
 - 案例：
