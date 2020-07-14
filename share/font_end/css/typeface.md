@@ -109,12 +109,11 @@
         /* 13.对不同字体进行字体尺寸进行微调 */
         font-size-adjust
 
-        /* 15.符合属性，将下列的详细的属性进行组合 */
-        font
-
-        /* 9.设置阴影效果 */
+        /* 14.设置阴影效果 */
         text-shadow
 
+        /* 15.符合属性，将下列的详细的属性进行组合 */
+        font
     ```
 
 - 案例：
@@ -184,20 +183,25 @@
             <!-- 8.设置文字的大写字母的格式 font-variant -->
             <span style="font-variant: small-caps;">测试文字 font-variant: small-caps;</span><br/>
 
-            <!-- 设置文字的大小写 text-transform -->
+            <!-- 9.设置文字的大小写 text-transform -->
             <span style="text-transform: uppercase;">测试文字 text-transform: uppercase;</span><br/>
             <span style="text-transform: capitalize;">测试文字 text-transform: capitalize;</span><br/>
 
-            <!-- 设置文字的行高 line-hight -->
+            <!-- 10.设置字体的行高 line-hight -->
             <span style="line-height: 50pt;">测试文字 line-height: 50pt;</span><br/>
 
-            <!-- 设置字符之间的间隔 letter-spacing -->
+            <!-- 11.设置字体之间的字符之间的间隔 letter-spacing -->
             <span style="letter-spacing: 50pt;">测试文字 letter-spacing: 50pt;</span><br/>
 
-            <!-- 设置单词之间的间隔 word-spacing -->
+            <!-- 12.单词之间的间隔 word-spacing -->
             <span style="word-spacing: 30pt;">测试文字 word-spacing: 30pt;</span><br/>
 
-            <!-- 设置阴影 text-shadow -->
+            <!-- 13.对不同字体进行字体尺寸进行微调 font-size-adjust *** 只有火狐支持-->
+            <div id="aa">The Yellow River flows into the sea</div>
+            <div id="bb">The Yellow River flows into the sea</div>
+            <div id="cc">The Yellow River flows into the sea</div>
+
+            <!-- 14.设置阴影效果 text-shadow -->
             <!-- 解释：
                 color: 指定阴影的颜色。
                 xoffset: 指定阴影在横向上的偏移。
@@ -209,12 +213,6 @@
             <p style="text-shadow: -5px -5px 2px; color: gray;">测试文字 - text-shadow</p>
             <p style="text-shadow: -5px 5px 2px; color: yellow;">测试文字 - text-shadow </p>
             <p style="text-shadow: 5px -5px 2px; color: green;">测试文字 - text-shadow</p>
-
-            <!-- 微调字体 font-size-adjust *** 只有火狐支持-->
-            <div id="aa">The Yellow River flows into the sea</div>
-            <div id="bb">The Yellow River flows into the sea</div>
-            <div id="cc">The Yellow River flows into the sea</div>
         </body>
         </html>
-
     ```
