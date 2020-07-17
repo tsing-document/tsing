@@ -30,6 +30,16 @@
         - ridge
         - inset
         - outset
+    - css3 新增：
+        - border-top-colors
+        - border-right-colors
+        - border-bottom-colors
+        - border-left-colors
+        - border-radius
+        - border-top-left-radius
+        - border-top-right-radius
+        - border-bottom-right-radius
+        - border-bottom-left-radius
 - 语法：
     ```css
         /* 1.边框颜色 */
@@ -100,6 +110,22 @@
             - ridge
             - inset
             - outset
+
+        /* css3新增 - 1.设置边框颜色 */
+            border-top-colors
+            border-right-colors
+            border-bottom-colors
+            border-left-colors
+    
+        /* css3新增 - 2.圆角边框 */
+            border-radius
+            border-top-left-radius
+            border-top-right-radius
+            border-bottom-right-radius
+            border-bottom-left-radius
+
+         /* 3.设置透明度 */
+            opacity 取值 0～1
     ```
 - 案例：
     ```css
@@ -211,4 +237,62 @@
 
         </body>
         </html>
+    ```
+    ```css
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> css3新增 - 边框属性 </title>
+            <style type="text/css">
+                div {
+                    width: 300px;
+                    height: 300px;
+                }
+            </style>
+        </head>
+        <body>
+            <!--
+                css新增 - 1.设置边框颜色
+                    border-top-colors
+                    border-right-colors
+                    border-bottom-colors
+                    border-left-colors
+                - 注意：只有火狐浏览器支持。
+            -->
+            <div style="border: 10px solid gray;
+                        -moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc #ddd #eee;
+                        -moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc #ddd #eee;
+                        -moz-border-lef-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc #ddd #eee;
+                        -moz-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc #ddd #eee;">
+                测试文字
+            </div>
+
+            <!--
+                css3新增 - 2.圆角边框
+                    border-radius
+                    border-top-left-radius
+                    border-top-right-radius
+                    border-bottom-right-radius
+                    border-bottom-left-radius
+            -->
+            <div style="border: 3px solid black;border-radius: 20px;background-color: red;">
+                测试文字
+            </div>
+
+            <div style="border: 3px solid black;border-radius: 200px 200px 10px 200px;background-color: red;">
+                测试文字
+            </div>
+
+            <!--
+                3.设置透明度
+                    opacity
+            -->
+            <div style="opacity: 0.29;;border: 3px solid black;border-radius: 200px;background-color: red;">
+                测试文字
+            </div>
+        </body>
+        </html>
+
     ```
