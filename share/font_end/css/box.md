@@ -1,5 +1,5 @@
 # 盒模型
-- 概念：
+- 概要：
     - css 的一个重要概念是盒模型（box model)。对于 html 元素而言、他会占据页面的一个矩形区域，这个区域是该元素占据的 `盒子`。
     - html 元素占据的矩形区域有：
         - 内容区（content）
@@ -10,3 +10,15 @@
             - 可见
         - 外边距区（margin）
             - 不可见
+    - 内填充相关属性：
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+    - 外边距相关属性：
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
