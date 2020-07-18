@@ -1,5 +1,9 @@
 # 《全栈技术》
 
+<h1 style="color: red;text-align: center;">
+    稍后等于永不！
+</h1>
+
 ## |><| [编程语言](/introduce.md) 
 
 ## |><| [前端](/share/font_end/index.md)
