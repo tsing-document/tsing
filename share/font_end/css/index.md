@@ -1,6 +1,6 @@
 # html5&css3&js讲义
 ## 第一章：及联样式和css选择器
-- 一、css 概述以及引入：
+- 一、css 概述以及引入
    - [历史和入门](./summary.md)
 
 - 二、css选择器
@@ -18,3 +18,13 @@
 - 三、[css3新增-背景](./css3-background.md)
 - 四、[渐变背景](./gradients-background.md)
 - 五、[边框](./border.md)
+
+## 第四章：大小、定位、轮廓相关属性
+- 一、大小
+    - [width、height](./width-height.md)
+    - [box-sizing]()
+    - [resize]()
+    - [calc函数]()
+- 二、定位
+
+- 三、轮廓
