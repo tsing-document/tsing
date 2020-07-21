@@ -4,6 +4,7 @@
 - [JavaScript规范](./javascript_standard.md)
 - [Axios](./axios.md)
 - [Css](./css/index.md)
+- [TypeScript](./typescript/index.md)
 
 # 进阶
 # 高级
