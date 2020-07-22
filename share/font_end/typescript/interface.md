@@ -1,4 +1,5 @@
 # 接口
+## todo:重新弄
 - 接口初探：
     ```js
         function printLable ( labelledObj: { lable : string } ) {
