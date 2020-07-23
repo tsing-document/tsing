@@ -24,6 +24,9 @@
 ## |--| 扩展工具
 - ### [markdown](/share/tools/markdown.md)
 
+## |--| 游戏人间🎮
+- ### [game](/share/games/index.md)
+
 ## |><| [作者信息](/author.md)
 
 ## TODO

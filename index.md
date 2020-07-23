@@ -6,7 +6,6 @@
 - [让人心动的算法](/pages/fragmentation/algorithm/index.md)
 - [Yarn](/pages/package/yarn/index.md)
 - [Nginx](/pages/back-end/nginx/index.md)
-
 - 百场汇
     - [百场汇项目部署结构](/pages/project/baichanghui/index.md)
 - 技术猪
