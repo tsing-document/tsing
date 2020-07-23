@@ -7,6 +7,6 @@
     - [接口](./interface.md)
     - [类](./class.md)
     - [函数](./function.md)
-
+    - [范型](./paradigms.md)
 - 三、[项目整合]()
 
