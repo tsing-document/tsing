@@ -6,6 +6,7 @@
     - [变量声明](./variabledeclaration.md)
     - [接口](./interface.md)
     - [类](./class.md)
+    - [函数](./function.md)
 
 - 三、[项目整合]()
 
