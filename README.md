@@ -2,30 +2,32 @@
 
 <div align=center><img style="box-shadow: 0 0 40px 0 #000000;" src="./zilv.png"/></div>
 
-## |><| [编程语言](/introduce.md) 
+## ⭕️[编程语言](/introduce.md) 
 
-## |><| [前端](/share/font_end/index.md)
+## ⭕️[前端](/share/font_end/index.md)
 
-## |><| [后端](/share/back_end/index.md)
+## ⭕️[后端](/share/back_end/index.md)
 
-## |><| [Server](/share/server/index.md)
+## ⭕️[Server](/share/server/index.md)
 
-## |><| [算法&数据结构&设计模式]()
+## ⭕[算法&数据结构&设计模式]()
 
-## |><| [版本管理工具](/share/vs/git/index.md)
+## ⭕️[版本管理工具](/share/vs/git/index.md)
 
-## |><| [优化](/share/optimization/index.md)
+## ⭕️[优化](/share/optimization/index.md)
 
-## |--| 图书
+## ⭕️图书
 - ### [番茄工作法](/share/book/tomato.md)
 
-## |--| 扩展工具
+## ⭕️扩展工具
 - ### [markdown](/share/tools/markdown.md)
 
-## |--| 游戏人间🎮
+## ⭕️游戏人间🎮
 - ### [game](/share/games/index.md)
 
-## |><| [作者信息](/author.md)
+## ⭕️[作者信息](/author.md)
+
+## 👮‍♀️[人生轨迹](/life-track.md)
 
 ## TODO
 - 前端的布局
