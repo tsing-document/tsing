@@ -48,7 +48,6 @@
 - Webpack
 - Http
 - Http2.0
-- Es6
 - Felk
 - Uml
 - GraphQL
@@ -64,6 +63,7 @@
 - Mysql
 - Mongodb
 - Redis
+- Es6
 ---
 - Jdk8
 - Springboot
