@@ -1,7 +1,7 @@
 # Java核心技术
 - 一、[简介](./briefintroduction.md)
-- 二、[java程序设计环境](./environment.md)
-- 三、[java的基本程序设计结构]()
+- 二、[设计环境](./environment.md)
+- 三、[基本程序设计结构](./basicdatastructure.md)
 - 四、[对象和类]()
 - 五、[继承]()
 - 六、[接口、lambda表达式和内部类]()
