@@ -4,6 +4,7 @@
 - 三、[基本程序设计结构](./basicdatastructure.md)
 - 四、[流程控制](./processcontrol.md)
 - 五、[循环](./loop.md)
+- 六、[数组](./array.md)
 - 四、[对象和类](./loop.md)
 - 五、[继承]()
 - 六、[接口、lambda表达式和内部类]()

@@ -6,6 +6,8 @@
         //2.do...while...
 
         //3.for
+
+        //4.增强for
     ```
 - 语法：
     ```java
@@ -22,6 +24,11 @@
 
         //3.普通for循环
             for(初始化; 布尔表达式; 更新) {
+                //执行代码块
+            }
+
+        //4.增强for
+            for(声明语句 : 表达式) {
                 //执行代码块
             }
 
@@ -52,5 +59,13 @@
                 for(int i = 0; i <= 10; i++){
                     System.out.println("执行了第" + i + "次");
                 }
+            }
+
+        //4.增强for
+            public static void main (String[] args) {
+                String[] names = { "李栋", "王彦舒", "老子恨你" };
+                for( String name : names ) {
+                    System.out.println(name);
+                };
             }
     ```
