@@ -1,7 +1,7 @@
 # Java核心技术
 ## 基础
 - 一、[简介](./briefintroduction.md)
-- 二、[设计环境](./environment.md)
+- 二、[环境搭建](./environment.md)
 - 三、[基本程序设计结构](./basicdatastructure.md)
 - 四、[流程控制](./processcontrol.md)
 - 五、[循环](./loop.md)
