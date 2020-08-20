@@ -1,11 +1,14 @@
 # Java核心技术
+## 基础
 - 一、[简介](./briefintroduction.md)
 - 二、[设计环境](./environment.md)
 - 三、[基本程序设计结构](./basicdatastructure.md)
 - 四、[流程控制](./processcontrol.md)
 - 五、[循环](./loop.md)
 - 六、[数组](./array.md)
-- 四、[对象和类](./loop.md)
+
+## 面向对象
+- 一、[对象和类](./class.md)
 - 五、[继承]()
 - 六、[接口、lambda表达式和内部类]()
 - 七、[异常、断言和日志]()
