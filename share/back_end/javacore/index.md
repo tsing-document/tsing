@@ -6,6 +6,7 @@
 - 四、[流程控制](./processcontrol.md)
 - 五、[循环](./loop.md)
 - 六、[数组](./array.md)
+- 七、[注释](./notes.md)
 
 ## 面向对象
 - 一、[对象和类](./class.md)
