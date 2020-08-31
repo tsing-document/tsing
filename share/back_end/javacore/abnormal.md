@@ -1,0 +1,10 @@
+# 异常
+- 概要：
+    - 异常的继承体系：
+        - Throwable
+            - Error
+            - Exception
+                - IoException
+                - RuntimeExption
+- 语法：
+- 案例：
