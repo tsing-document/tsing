@@ -14,10 +14,9 @@
 - 一、[对象和类](./class.md)
 - 二、[面向对象三大特征](./features.md)
 - 三、[接口-todo]()
-- 十二、[并发-todo]()
 
 ## 异常处理
-- 一、[异常-todo](./abnormal.md)
+- 一、[异常](./abnormal.md)
 - 二、[日志](./log.md)
 
 ## 高级
@@ -25,5 +24,5 @@
 - 二、[并发-todo]()
 - 三、[lambda-todo](./lambda.md)
 - 四、[代理-todo]()
-- 五、[范型](./generic.md)
+- 五、[泛型](./generic.md)
 - 六、[集合](./aggregate.md)
