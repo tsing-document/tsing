@@ -7,7 +7,7 @@
 - 五、[循环](./loop.md)
 - 六、[数组](./array.md)
 - 七、[注释](./notes.md)
-- 八、[枚举类-todo]()
+- 八、[枚举](./enum.md)
 - 九、[内部类](innerclass.md)
 
 ## 面向对象
