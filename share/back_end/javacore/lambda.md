@@ -13,13 +13,13 @@
     - 四大核心内置函数接口：
         - Consumer<T>：
             - 消费型接口
-                - void accept(T t);
+                - void accept(T t); //没有返回结果
         - Supplier<T>：
             - 供给型接口
-                - T get();
-        - Function(T, R)：
+                - T get(); //获取数据
+        - Function(T, R)：// T：传对象 R： 返回
             - 函数式接口
-                - R apply(T t);
+                - R apply(T t); 
         - Predicate<T>：
             - 断言型接口
                 - boolean test(T t);
@@ -30,7 +30,14 @@
             - 对象::实例方法名
             - 类::静态方法名
             - 类::实例方法名
-    
+    - 构造器引用：
+        - 注意：
+            - 需要调用的构造器的参数列表要和函数式接口中的抽象方法的参数列表保持一致。
+        - 语法格式：
+            - className::new
+    - 数组引用：
+        - 语法格式：
+            - Type::new
 - 语法：
     ```java
         (paramters) -> expression
@@ -165,7 +172,60 @@
                         return result;
                     }
         //方法引用
-            //对象::实例方法名
-            //类::静态方法名
-            //类::实例方法名
+            package com.tsing.lambda.demo2;
+
+            public class TestMethodRef {
+                
+                //对象::实例方法名
+                @Test
+                public void function01() {
+                    //方式1:
+                    Consumer<String> con = (x) -> System.out.println("测试数据" + x);
+                    con.accept("方式1");
+                    
+                    //方式2:
+                    PrintStream ps = System.out;
+                    Consumer<String> con1 = ps::println;
+                    con1.accept("方式2");
+                    
+                    //方式3:
+                    Consumer<String> con2 = System.out::println;
+                    con2.accept("方式3");
+                    
+                    //方式4:
+                    Person p = new Person(1L, "李栋", 20, "女");
+                    Supplier<String> sup = p::getName;
+                    System.out.println(sup.get());
+                }
+                
+                //类::静态方法名
+                @Test
+                public void function02() {
+                    //方式1:
+                    Comparator<Integer> con = (x, y) -> Integer.compare(x, y);
+                    int result = con.compare(30, 10);
+                    System.out.println(result);
+                    
+                    //方式2:
+                    Comparator<Integer> con1 = Integer::compare;
+                }
+                
+                //类::实例方法名
+                @Test
+                public void function03() {
+                    BiPredicate<String, String> bp = (x, y) -> x.equals(y);
+                    
+                    BiPredicate<String, String> bp1 = String::equals;
+                }
+                
+                //构造器引用
+                @Test
+                public void function04() {
+                    Supplier<Person> p = Person::new;
+                    Person person = p.get();
+                    System.out.println(person);//调用空参构造
+                }
+
+            }
+
     ```
