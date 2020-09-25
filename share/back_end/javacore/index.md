@@ -2,7 +2,7 @@
 ## 基础
 - 一、[简介](./briefintroduction.md)
 - 二、[环境搭建](./environment.md)
-- 三、[基本程序设计结构](./basicdatastructure.md)
+- 三、[基本数据类型](./basicdatastructure.md)
 - 四、[流程控制](./processcontrol.md)
 - 五、[循环](./loop.md)
 - 六、[数组](./array.md)
@@ -22,7 +22,10 @@
 ## 高级
 - 一、[反射-todo]()
 - 二、[并发-todo]()
-- 三、[lambda-todo](./lambda.md)
+- 三、[lambda](./lambda.md)
+- 四、[stream](./stream.md)
+- 五、[并行流和串行流-todo](./parallelandserial.md)
+- 六、[optional-todo](./optional.md)
 - 四、[代理-todo]()
 - 五、[泛型](./generic.md)
 - 六、[集合](./aggregate.md)
