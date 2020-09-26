@@ -6,7 +6,7 @@
 
 ## ⭕️[前端](/share/font_end/index.md)
 
-## ⭕️[后端](/share/back_end/index.md)
+## [后端](/share/back_end/index.md)
 
 ## ⭕️[Server](/share/server/index.md)
 
@@ -24,6 +24,9 @@
 
 ## ⭕️游戏人间🎮
 - ### [game](/share/games/index.md)
+
+## 自理能力增强
+- ### [english](./owner/english/index.md)
 
 ## ⭕️[作者信息](/author.md)
 
