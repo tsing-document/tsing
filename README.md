@@ -26,7 +26,7 @@
 - ### [game](/share/games/index.md)
 
 ## 自理能力增强
-- ### [english](./owner/english/index.md)
+- ### [English](./owner/english/index.md)
 
 ## ⭕️[作者信息](/author.md)
 
