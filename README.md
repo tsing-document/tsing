@@ -10,7 +10,9 @@
 
 ## [Server](/share/server/index.md)
 
-## [算法&数据结构&设计模式]()
+## [算法&数据结构](./share/datastructureandalgorithm/index.md)
+
+## [设计模式]()
 
 ## [版本管理工具](/share/vs/git/index.md)
 
