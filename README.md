@@ -8,6 +8,8 @@
 
 ## [后端](/share/back_end/index.md)
 
+## [存储](/share/storages/index.md)
+
 ## [Server](/share/server/index.md)
 
 ## [算法&数据结构](./share/datastructureandalgorithm/index.md)
