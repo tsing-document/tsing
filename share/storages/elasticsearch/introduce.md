@@ -1,0 +1,25 @@
+# 简介
+
+- 概要：
+    - 定义：
+        - Elaticsearch 简称为 es, es是一个开源的高扩展的分布式全文检索引擎，他几乎是实时的存储、检索数据；本身扩展性很好，可以扩展到上百台服务器，处理PB的数据，es使用java开发并使用Lucene作为其核心来实现所有索引和搜索的功能，但是他的目的就是通过简单的restful api来隐藏Lucene的复杂性，从而让全文检索变得简单。
+        - 它用于全文搜索、结构化搜索、分析。
+    - 核心概念：
+        - es 是面向文档的。
+        - es 中有索引（对应mysql中的数据库）、type（对应mysql中的表）、documents（对应数据库中的行）、fields。
+        - 一个人就是一个集群！集群的名称是 elaticsearch。
+    - 倒排索引：
+        - 
+- ik分词器：
+    - 两种算法：
+        - ik_smart //最少切分
+        - ik_max_word //最细粒度划分
+- rest ful 风格说明：
+    - PUT 创建文档
+    - POST 创建文档
+    - POST 后面家 update 修改文档
+    - DELETE 删除文档
+    - GET 查询文档
+    - POST 后面加 -search 查询所有数据·
+- 语法：
+- 案例：
