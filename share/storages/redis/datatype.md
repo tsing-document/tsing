@@ -49,8 +49,127 @@
                 - 这个需要自己在思考一下
             - 先获取值在设置值：
                 - getset key_name value //如果数据库中有原来的值就先获取数据库中的值，再将值进行替换掉。
-        - list（集合）:
-            - 
+        - List（集合）:
+            - 设置值-左边：
+                - lpush key_name value
+            - 设置值-右边：
+                - rpush key_name value
+            - 获取值:
+                - lrange key_name 开始索引的位置 结束索引的位置
+                - lrange key_nane 0 -1 获取所有的数据
+            - 移除数据-左边：
+                - lprop key_name
+            - 移除数据-右边：
+                - rprop key_name
+            - 移除指定的值：
+                - lrem key_name 移除的数量 value
+            - 根据索引获取元素：
+                - lindex key_name 需要获取元素的索引数字
+            - 获取集合的长度：
+                - llen list
+            - 截取集合中的一部分数据元数据会被改变：
+                - ltrim key_name 开始索引的位置 结束索引的位置
+            - 移除列表中的最后一个元素，并将元素新增到新的列表中：
+                - rproplpush key_name new_key_name
+            - 判断是否存在列表：
+                - exists key_name
+            - 将列表中指定下标的值替换成另一个值，更新操作，如果不存在的话就会报错。
+                - lset key_name 0 item
+            - 将某个具体的value插入到列表中某个元素的前面或者后面：
+                - linsert key_name before 或者 after 原列表中具体的元素 新增的元素。
+        - Set（集合）：
+            - 设置值：
+                - sadd key_name value
+            - 查看数据：
+                - smembers key_name
+            - 判读某一个值是否在集合中：
+                - sismember key_name value
+            - 获取元素的个数：
+                - scard key_name
+            - 移除数据：
+                - srem key_name value
+            - 随机抽取数据：
+                - srandmember key_name
+            - 随机抽选出指定个数的元素：
+                - srandmember key_name 2
+            - 随机删除指定的key:
+                - spop key_name
+            - 将一个指定的值移动到另外一个集合中：
+                - smove 原集合 目标集合 要移动的元素
+            - 差集：
+                - sidff 原集合 目标集合
+            - 交集：
+                - sinter 原集合 目标集合
+            - 并集：
+                - sunion 原集合 目标集合
+        - Hash（哈希）：
+            - 设置值：
+                - hset key_name filed1 value
+            - 获取值：
+                - hget key_name filed1
+            - 批量设置值:
+                - hmset key_name filed1 value1 filed2 value2
+            - 批量获取值：
+                - hmget key_name filed1 filed2
+            - 获取所有的值：
+                - hgetall key_name
+            - 删除集合中具体某一个字段的值：
+                - hdel key_name filed1
+            - 获取集合中元素的个数：
+                - hlen key_name
+            - 判断key是否存在：
+                - hexists key_name
+            - 只获取所有的filed:
+                - hkeys key_name
+            - 只获取所有的value:
+                - hvals key_name 
+            - 自增：
+                - hincrby key_name filed1 1
+            - 自减：
+                - decrby key_name filed1 1
+            - 设置值：
+                - hsetnx key_name filed1 value //如果不存在则可以设置
+                - hsetnx key_name filed1 value //如果存在不能设置
+        - Zset（有序集合）：
+            - 设置一个值：
+                - zadd key_name 1（排序的标识位） value
+            - 设置多个值：
+                - zadd key_name 2（排序的标识位） value2  3（排序的标识位） value3
+            - 获取值：
+                - zrange key_name 0 -1
+            - 排序：
+                - zrangebysocre key_name -inf +inf
+            - 移除：
+                - zrem key_name value
+            - 获取集合中的个数：
+                - zcard key_name
+            - 获取指定区间的成员数量：
+                - zcount key_name 开始位置索引 结束位置索引
     - 三种特殊数据类型：
+        - geospatial（地理位置）：
+            - 添加城市的位置：
+                - geoadd china:city 116.40 39.90 beijing
+            - 获取指定城市的经纬度：
+                - geopos china:city beijing chongqing
+            - 获取两人之间的距离：
+                - geodist china:city beijing shanghai km
+            - 获取指定半径范围之内的坐标：
+                - georadius china:city 110 30 1000 km
+            - 根据元素寻找元素：
+                - georeadiusbymember china:city beijing 1000 km
+        - hyperloglog（ 优点： 占用内存小）:
+            - 设置值：
+                - PFadd key_name value1 value2 value3 value4 value5 value6
+            - 获取数量：
+                - PFCOUNT key_name
+            - 合并两个集合：
+                - PFMERGE 新集合 集合2 集合3
+        - Bitmap（位图）：
+            - 记录周一到周五的打卡：
+                - setbit sign 0 1 // 0是周几 1 是否打卡
+            - 查看某一天是否打卡：
+                - gitbit sign 3
+            - 统计打卡的天数：
+                - bitcout sign
 - 语法：
 - 案例：
