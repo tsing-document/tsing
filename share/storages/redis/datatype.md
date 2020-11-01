@@ -1,0 +1,56 @@
+# 数据类型
+- 概要：
+    - Redis-key:
+        - 判断key是否存在：
+            - EXISTS key_name
+        - 设置key的过期时间：
+            - EXPIRE key_name 过期的时间值（数字 单位是秒）
+        - 查看key的剩余时间：
+            - ttl key_name
+        - 查看当前key的类型：
+            - type key_name
+    - 五种数据类型：
+        - String（字符串）：
+            - 设置值：
+                - set key_name value
+            - 获取值：
+                - get key_name
+            - 获取所有的key:
+                - keys *
+            - 判断一个key是否存在：
+                - exists key_name
+            - 追加字符串，如果当前key不存在就会创建一个新的key:
+                - append key_name value
+            - 获取字符串的长度：
+                - strlen key_name
+            - 自增1：
+                - incr
+            - 自减1：
+                - decr
+            - 自增不确定数：
+                - incrby key_name 10
+            - 自减不确定数：
+                - decrby key_name 10
+            - 截取字符串：
+                - getrange key_name 起始位置索引 结束位置索引
+            - 替换字符串：
+                - setrange key_name offset value
+            - 设置过期时间：
+                - setex key_name 过期的时长 value
+            - 不存在的设置（在分布式锁中常常使用）：
+                - setnx key_name value
+            - 批量设置值：
+                - mset key_name1 value1 key_name2 value2 key_name3 value3
+            - 批量获取值1：
+                - mget key_name1 key_name2 key_name3
+            - 批量设置值2：
+                - msetnx key_name1 key_name2 key_name3 //这个是原子性操作，要么全部成功，要么全部失败。
+            - 对象：
+                - 这个需要自己在思考一下
+            - 先获取值在设置值：
+                - getset key_name value //如果数据库中有原来的值就先获取数据库中的值，再将值进行替换掉。
+        - list（集合）:
+            - 
+    - 三种特殊数据类型：
+- 语法：
+- 案例：
