@@ -6,6 +6,7 @@
 - [基础知识](./redis/knowledge.md)
 - [数据类型](./redis/datatype.md)
 - [应用场景](./redis/applicationscenarios.md)
+- [事务](./redis/affair.md)
 
 ## Elasticsearch 基础
 - [安装和配置：略]()
