@@ -8,6 +8,6 @@
 - [应用场景](./redis/applicationscenarios.md)
 - [事务](./redis/affair.md)
 
-## Elasticsearch 基础
+## Elasticsearch 基础 
 - [安装和配置：略]()
 - [简介]()
