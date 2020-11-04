@@ -8,6 +8,7 @@
 - [应用场景](./redis/applicationscenarios.md)
 - [事务](./redis/affair.md)
 - [持久化](./redis/persistence.md)
+- [发布订阅](./redis/publishsubscribe.md)
 
 ## Elasticsearch 基础 
 - [安装和配置：略]()
