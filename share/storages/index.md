@@ -7,6 +7,7 @@
 - [数据类型](./redis/datatype.md)
 - [应用场景](./redis/applicationscenarios.md)
 - [事务](./redis/affair.md)
+- [持久化](./redis/persistence.md)
 
 ## Elasticsearch 基础 
 - [安装和配置：略]()
