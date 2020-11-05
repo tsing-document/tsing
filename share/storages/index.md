@@ -12,4 +12,5 @@
 
 ## Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
-- [安装和配置：略]()
+- [安装和配置](./elasticsearch/install.md)
+- 
