@@ -11,5 +11,5 @@
 - [应用场景](./redis/applicationscenarios.md)
 
 ## Elasticsearch 基础 
+- [简介](./elasticsearch/introduce.md)
 - [安装和配置：略]()
-- [简介]()
