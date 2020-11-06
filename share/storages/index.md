@@ -1,5 +1,3 @@
-# storages
-
 ## Redis 基础
 - [简介](./redis/introduce.md)
 - [安装和配置](./redis/install.md)
@@ -13,4 +11,4 @@
 ## Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
 - [安装和配置](./elasticsearch/install.md)
-- 
+- [基础知识](./elasticsearch/knowledge.md)
