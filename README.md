@@ -2,23 +2,14 @@
 
 <div align=center><img style="box-shadow: 0 0 40px 0 #000000;" src="./zilv.png"/></div>
 
-## [编程语言](/introduce.md) 
+|  坚持   | 耐心  |
+|  ----  | ----  |
+| [编程语言](/introduce.md)          | [前端](/share/font_end/index.md) |
+| [后端](/share/back_end/index.md)  |[存储](/share/storages/index.md)  |
+| [后端](/share/back_end/index.md)  |[存储](/share/storages/index.md)  |
+| [Server](/share/server/index.md) | [算法&数据结构](./share/datastructureandalgorithm/index.md) |
+| [设计模式]() |  [版本管理工具](/share/vs/git/index.md) | [优化](/share/optimization/index.md) |
 
-## [前端](/share/font_end/index.md)
-
-## [后端](/share/back_end/index.md)
-
-## [存储](/share/storages/index.md)
-
-## [Server](/share/server/index.md)
-
-## [算法&数据结构](./share/datastructureandalgorithm/index.md)
-
-## [设计模式]()
-
-## [版本管理工具](/share/vs/git/index.md)
-
-## [优化](/share/optimization/index.md)
 
 ## 图书
 - ### [番茄工作法](/share/book/tomato.md)
