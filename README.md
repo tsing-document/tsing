@@ -2,7 +2,7 @@
 
 <div align=center><img style="box-shadow: 0 0 40px 0 #000000;" src="./zilv.png"/></div>
 
-<table width="400" border="8">
+<table width="400" border="1">
  <tr>
   <th align="left">消费项目....</th>
   <th align="right">一月</th>
