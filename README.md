@@ -1,7 +1,7 @@
 # 《全栈技术》
 
 
-<table width="100%" border="1" background="https://practicehouse.com/wp-content/uploads/2018/11/vector-in-java.png">
+<table align="center" border="1" background="https://practicehouse.com/wp-content/uploads/2018/11/vector-in-java.png">
  <tr>
   <th align="left" colspan="5">介绍</th>
  </tr>
