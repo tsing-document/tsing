@@ -1,33 +1,5 @@
 # 《全栈技术》
 
-
-<table align="center" width="1000px"  border="1" background="https://practicehouse.com/wp-content/uploads/2018/11/vector-in-java.png">
- <tr>
-  <th align="left" colspan="5">介绍</th>
- </tr>
- <tr>
-    <td align="center" colspan="5">
-        编程语言
-    </td>
- </tr>
- <tr>
-  <td align="left" colspan="5">分类</td>
- </tr>
- <tr>
-  <td align="center">前端</td>
-  <td align="center">后端</td>
-  <td align="center">存储</td>
-  <td align="center">Server</td>
- </tr>
- <tr>
-  <td align="center">算法&数据结构</td>
-  <td align="center">设计模式</td>
-  <td align="center">版本管理工具</td>
-  <td align="center">优化</td>
- </tr>
-
-</table>
-
 |  坚持 |
 |  ----  |
 |[编程语言](/introduce.md)|
