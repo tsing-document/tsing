@@ -4,12 +4,11 @@
 - [后端](/share/back_end/index.md)
 - [存储](/share/storages/index.md)
 - [Server](/share/server/index.md) 
-- [算法&数据结构](./share/datastructureandalgorithm/index.md)
 - [版本管理工具](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
 
-
 ## TODO
+- [算法&数据结构](./share/datastructureandalgorithm/index.md)
 - 设计模式
 - 前端的布局
 - Css
