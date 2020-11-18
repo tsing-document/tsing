@@ -1,33 +1,31 @@
 # 《全栈技术》
 
-<div align=center><img style="box-shadow: 0 0 40px 0 #000000;" src="./zilv.png"/></div>
 
-<table width="100%" border="1">
+<table width="100%" border="1" background="https://practicehouse.com/wp-content/uploads/2018/11/vector-in-java.png">
  <tr>
-  <th align="left">消费项目....</th>
-  <th align="right">一月</th>
-  <th align="right">二月</th>
+  <th align="left" colspan="5">介绍</th>
  </tr>
  <tr>
-  <td align="left">衣服</td>
-  <td align="right">$241.10</td>
-  <td align="right">$50.20</td>
+    <td align="center" colspan="5">
+        编程语言
+    </td>
  </tr>
  <tr>
-  <td align="left">化妆品</td>
-  <td align="right">$30.00</td>
-  <td align="right">$44.45</td>
+  <td align="left" colspan="5">分类</td>
  </tr>
  <tr>
-  <td align="left">食物</td>
-  <td align="right">$730.40</td>
-  <td align="right">$650.00</td>
+  <td align="center">前端</td>
+  <td align="center">后端</td>
+  <td align="center">存储</td>
+  <td align="center">Server</td>
  </tr>
  <tr>
-  <th align="left">总计</th>
-  <th align="right">$1001.50</th>
-  <th align="right">$744.65</th>
+  <td align="center">算法&数据结构</td>
+  <td align="center">设计模式</td>
+  <td align="center">版本管理工具</td>
+  <td align="center">优化</td>
  </tr>
+
 </table>
 
 |  坚持 |
@@ -42,22 +40,6 @@
 |[版本管理工具](/share/vs/git/index.md)| 
 |[优化](/share/optimization/index.md)|
 
-
-## 图书
-- ### [番茄工作法](/share/book/tomato.md)
-
-## 扩展工具
-- ### [markdown](/share/tools/markdown.md)
-
-## 游戏人间🎮
-- ### [game](/share/games/index.md)
-
-## 自理能力增强
-- ### [English](./owner/english/index.md)
-
-## [作者信息](/author.md)
-
-## [人生轨迹](/life-track.md)
 
 ## TODO
 - 前端的布局
