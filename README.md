@@ -1,5 +1,3 @@
-# 《全栈技术》
-
 ## 追风少年
 - [编程语言](/introduce.md)
 - [前端](/share/font_end/index.md)
