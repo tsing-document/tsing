@@ -11,7 +11,6 @@
 
 
 - 五、[循环](./basic/loop.md)
-- 六、[数组](./array.md)
 
 - 八、[枚举](./enum.md)
 - 九、[内部类](innerclass.md)

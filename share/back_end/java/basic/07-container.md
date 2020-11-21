@@ -65,29 +65,52 @@
             - TreeMap
                 - 特点：
                     - 底层数据结构是红黑树。
+    - 循环
 - 语法：
-    ```java
-        //数组：
-            //语法：
-                type [] arrayName;
-                或者
-                type arrayName [];
-            //初始化：
-                //静态初始化：
-                    //方式1
-                    int [] arr = new int[]{5, 6, 7, 8, 9};
-                    System.out.println(arr[1]);
+```java
+    //数组：
+        //语法：
+            type [] arrayName;
+            或者
+            type arrayName [];
+        //初始化：
+            //静态初始化：
+                //方式1
+                int [] arr = new int[]{5, 6, 7, 8, 9};
+                System.out.println(arr[1]);
 
-                    //方式2
-                    int [] arrName = {1, 2, 3, 4, 6};
-                //动态初始化:
-                    int [] arrs = new int[5];
-            //存值&获取值：
-                //获取值
-                    arrayName[索引位置]
-                //存值
-                    arrayName[索引位置] = 值;
-    ```
+                //方式2
+                int [] arrName = {1, 2, 3, 4, 6};
+            //动态初始化:
+                int [] arrs = new int[5];
+        //存值&获取值：
+            //获取值
+                arrayName[索引位置]
+            //存值
+                arrayName[索引位置] = 值;
+    //循环
+        // 1.while
+            while( 布尔表达式 ) {
+                //循环内容
+            }
+
+        //2.do...while...
+            //循环至少执行一次
+            do {
+                //循环内容
+            } while(条件表达式);
+
+        //3.普通for循环
+            for(初始化; 布尔表达式; 更新) {
+                //执行代码块
+            }
+
+        //4.增强for
+            for(声明语句 : 表达式) {
+                //执行代码块
+            }
+        
+```
 - 案例：
 ```java
     //HashSet
@@ -351,4 +374,39 @@
                     } 
         }
     }
+
+    //循环
+        //1.while
+            public static void main (String[] args) {
+                int x = 10;
+                while(x < 20) {
+                    System.out.print("value of x : " + x );
+                        x++;
+                    System.out.print("\n");
+                }
+            }
+        //2.do...while...
+            public static void main (String[] args) {
+                int x = 10;
+                do{
+                    System.out.print("value of x : " + x );
+                        x++;
+                    System.out.print("\n");
+                } while (x < 12);
+            }
+
+        //3.for
+            public static void main (String[] args) {
+                for(int i = 0; i <= 10; i++){
+                    System.out.println("执行了第" + i + "次");
+                }
+            }
+
+        //4.增强for
+            public static void main (String[] args) {
+                String[] names = { "李栋", "王彦舒", "老子恨你" };
+                for( String name : names ) {
+                    System.out.println(name);
+                };
+            }
 ```
