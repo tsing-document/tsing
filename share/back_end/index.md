@@ -1,13 +1,16 @@
-# 基础
+#### 基础
 
-- 一、[简介](./javacore/briefintroduction.md)
-- 二、[环境搭建](./javacore/environment.md)
-- 三、[注释](./javacore/notes.md)
-- 四、[数据类型](./javacore/basicdatastructure.md)
-- 五、[运算符](./javacore/operator.md)
+- 一、[简介](./java/basic/01-briefintroduction.md)
+- 二、[环境搭建](./java/basic/02-environment.md)
+- 三、[注释](./java/basic/03-notes.md)
+- 四、[数据类型](./java/basic/04-basicdatastructure.md)
+- 五、[运算符](./java/basic/05-operator.md)
 
-- 四、[流程控制](./processcontrol.md)
-- 五、[循环](./loop.md)
+- 六、[流程控制](./java/basic/06-processcontrol.md)
+- 七、[容器](./java/basic/07-container.md)
+
+
+- 五、[循环](./basic/loop.md)
 - 六、[数组](./array.md)
 
 - 八、[枚举](./enum.md)

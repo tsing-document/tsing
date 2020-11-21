@@ -17,7 +17,7 @@
 
     - 类型转换：
         - 自动类型转换：
-            ![自动类型转换](./img/leixingzhuanhuan.png)
+            - ![自动类型转换](./img/leixingzhuanhuan.png)
         - 强制类型转换：
             - 强制类型转换数据容易丢失精度。
 

@@ -13,6 +13,9 @@
     - 逻辑运算符：
         - 分类：
             - `&&` `&` `||` `|` `!` `^`
+    - 三目运算符：
+        - 分类：
+            - (expression) ? 表达式1 : 表达式2
     - 位运算符：
 - 语法：
 - 案例：
@@ -109,7 +112,12 @@
             System.out.println(true ^ false); //true
             System.out.println(false ^ true); //true
             System.out.println(false ^ false); //false
+        //三目运算符:
+            int a = 7;
+            int b = 10;
 
+            boolean c = a > b ? true : false;
+            System.out.println(c); //false
 
 
     ```
