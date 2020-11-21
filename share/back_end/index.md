@@ -6,9 +6,13 @@
 - 四、[数据类型](./java/basic/04-basicdatastructure.md)
 - 五、[运算符](./java/basic/05-operator.md)
 
+*****
+
 - 六、[流程控制](./java/basic/06-processcontrol.md)
 - 七、[容器](./java/basic/07-container.md)
+- 八、[面向对象](./java/basic/08-oop.md)
 
+*****
 - 八、[枚举](./enum.md)
 - 九、[内部类](innerclass.md)
 
