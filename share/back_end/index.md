@@ -11,6 +11,8 @@
 - 六、[流程控制](./java/basic/06-processcontrol.md)
 - 七、[容器](./java/basic/07-container.md)
 - 八、[面向对象](./java/basic/08-oop.md)
+- 九、[泛型](./java/basic/09-generic.md)
+- 十、[异常](./java/basic/10-abnormal.md)
 
 *****
 - 八、[枚举](./enum.md)
@@ -18,13 +20,10 @@
 
 
 - 一、[对象和类](./class.md)
-- 二、[面向对象三大特征](./features.md)
 - 三、[接口-todo]()
 - 四、[java8-接口-todo]()
 
 - 一、[异常](./abnormal.md)
-- 二、[日志](./log.md)
-
 - 一、[反射-todo]()
 - 二、[并发-todo]()
 - 三、[lambda](./lambda.md)
@@ -33,7 +32,7 @@
 - 六、[optional](./optional.md)
 - 七、[java8-日期](./java8time.md)
 - 四、[代理-todo]()
-- 五、[泛型](./generic.md)
+
 - 六、[集合](./aggregate.md)
 - 七、[事务](./affair.md)
 
