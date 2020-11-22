@@ -1,5 +1,4 @@
 ## 追风少年
-- [编程语言](/introduce.md)
 - [前端](/share/font_end/index.md)
 - [后端](/share/back_end/index.md)
 - [存储](/share/storages/index.md)

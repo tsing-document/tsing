@@ -15,6 +15,10 @@
 - 十、[异常](./java/basic/10-abnormal.md)
 
 *****
+
+- 十一、[注解]](./java/basic/11-annotation.md)
+
+*****
 - 八、[枚举](./enum.md)
 - 九、[内部类](innerclass.md)
 
@@ -23,7 +27,6 @@
 - 三、[接口-todo]()
 - 四、[java8-接口-todo]()
 
-- 一、[异常](./abnormal.md)
 - 一、[反射-todo]()
 - 二、[并发-todo]()
 - 三、[lambda](./lambda.md)
