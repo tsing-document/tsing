@@ -16,7 +16,7 @@
 
 *****
 
-- 十一、[注解]](./java/basic/11-annotation.md)
+- 十一、[注解](./java/basic/11-annotation.md)
 
 *****
 - 八、[枚举](./enum.md)
