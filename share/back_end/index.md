@@ -17,6 +17,7 @@
 *****
 
 - 十一、[注解](./java/basic/11-annotation.md)
+- 十二、[多线程](./java/basic/12-tread.md)
 
 *****
 - 八、[枚举](./enum.md)
@@ -28,7 +29,6 @@
 - 四、[java8-接口-todo]()
 
 - 一、[反射-todo]()
-- 二、[并发-todo]()
 - 三、[lambda](./lambda.md)
 - 四、[stream](./stream.md)
 - 五、[并行流和串行流-todo](./parallelandserial.md)
