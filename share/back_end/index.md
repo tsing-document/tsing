@@ -20,25 +20,8 @@
 - 十二、[多线程](./java/basic/12-thread.md)
 - 十三、[网络编程](./java/basic/13-network.md)
 - 十四、[反射](./java/basic/14-reflex.md)
+
 *****
-- 八、[枚举](./enum.md)
-- 九、[内部类](innerclass.md)
-
-
-- 一、[对象和类](./class.md)
-- 三、[接口-todo]()
-- 四、[java8-接口-todo]()
-
-- 三、[lambda](./lambda.md)
-- 四、[stream](./stream.md)
-- 五、[并行流和串行流-todo](./parallelandserial.md)
-- 六、[optional](./optional.md)
-- 七、[java8-日期](./java8time.md)
-- 四、[代理-todo]()
-
-- 六、[集合](./aggregate.md)
-- 七、[事务](./affair.md)
-
 #### 进阶
 
 #### 技巧
