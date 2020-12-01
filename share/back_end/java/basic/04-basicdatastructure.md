@@ -3,17 +3,24 @@
 - 概要：
     - 8种基本数据类型：
         - 整型
-            - int
-            - short
-            - long
             - byte
+                - 1个字节
+            - short
+                - 2个字节
+            - int
+                - 4个字节
+            - long
+                - 8个字节
         - 浮点型
             - float
+                - 4个字节
             - double
+                - 8个字节
         - boolean
             - boolean
         - 字符型
             - char
+                - 2个字节
 
     - 类型转换：
         - 自动类型转换：
