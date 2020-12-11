@@ -18,3 +18,4 @@
 - [mysql和程序的交互](./mysql/interactive.md)
 - [mysql的架构](./mysql/framework.md)
 - [innoDB存储引擎](./mysql/innodb-framework.md)
+- [binLog](./mysql/binlog.md)
