@@ -1,7 +1,7 @@
 ## 追风少年
 - [前端](/share/font_end/index.md)
 - [后端](/share/back_end/index.md)
-- [存储](/share/storages/index.md)
+- [存储](/share/storages/README.md)
 - [Server](/share/server/index.md) 
 - [版本管理工具](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
