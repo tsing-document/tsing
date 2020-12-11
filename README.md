@@ -6,6 +6,7 @@
 - [Server](/share/server/index.md) 
 - [版本管理工具](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
+- 12课
 
 ## TODO
 - [JUC](./demo/juc/index.md)
