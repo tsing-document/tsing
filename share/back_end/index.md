@@ -44,6 +44,11 @@
 - 三、[Dubbo架构](./java/senior/dubbo/03-framework.md)
 - 四、[常见问题](./java/senior/dubbo/04-question)
 
+#### 存储
+
+##### MySQL
+
+
 #### 技巧
 - [双重for打印出你想要的任何形状](./skill/double-for.md)
 #### 持续构建

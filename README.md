@@ -5,7 +5,7 @@
 - [Server](/share/server/index.md) 
 - [版本管理工具](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
-
+- 测试
 ## TODO
 - [JUC](./demo/juc/index.md)
 - [算法&数据结构](./share/datastructureandalgorithm/index.md)
