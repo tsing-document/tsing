@@ -42,7 +42,7 @@
 - 一、[简介](./java/senior/dubbo/01-briefintroduction.md)
 - 二、[为什么会出现Dubbo?](./java/senior/dubbo/02-reason.md)
 - 三、[Dubbo架构](./java/senior/dubbo/03-framework.md)
-- 四、[常见问题](./java/senior/dubbo/04-question)
+- 四、[常见问题](./java/senior/dubbo/04-question.md)
 
 #### 存储
 
