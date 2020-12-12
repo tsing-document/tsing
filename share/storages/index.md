@@ -15,7 +15,10 @@
 - 
 
 #### MySQL
+
+##### 高级
 - [mysql和程序的交互](./mysql/interactive.md)
 - [mysql的架构](./mysql/framework.md)
 - [innoDB存储引擎](./mysql/innodb-framework.md)
-- [binLog](./mysql/binlog.md)
+- [binlog](./mysql/binlog.md)
+- [bufferPool在内存中到底是怎么存放的](./mysql/bufferpool.md)
