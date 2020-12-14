@@ -1,10 +1,10 @@
 ## 追风少年
 - [网站名词](/noun.md)
-- [前端](/share/font_end/index.md)
-- [后端](/share/back_end/index.md)
-- [存储](/share/storages/index.md)
-- [Server](/share/server/index.md) 
-- [版本管理工具](/share/vs/git/index.md)
+- [font_end](/share/font_end/index.md)
+- [back_end](/share/back_end/index.md)
+- [storage](/share/storages/index.md)
+- [server](/share/server/index.md) 
+- [version_management](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
 - 12课
 
