@@ -23,6 +23,7 @@
     - [innoDB存储引擎](./mysql/innodb-framework.md)
     - [binlog](./mysql/binlog.md)
     - [bufferPool在内存中到底是怎么存放的](./mysql/bufferpool.md)
+    - [bufferpool中的free链表](./mysql/bufferpool-free.md)
 
 - explain
     - [explain](./mysql/explain.md)
