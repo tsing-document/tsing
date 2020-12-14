@@ -1,4 +1,4 @@
-#### Redis 基础
+ #### Redis 基础
 - [简介](./redis/introduce.md)
 - [安装和配置](./redis/install.md)
 - [基础知识](./redis/knowledge.md)
