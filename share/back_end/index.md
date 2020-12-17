@@ -47,5 +47,6 @@
 #### 存储
 
 #### 技巧
+- [ThreadLocal](./skill/threadlocal.md)
 - [双重for打印出你想要的任何形状](./skill/double-for.md)
 #### 持续构建
