@@ -38,15 +38,16 @@
 #### 高级
 
 ##### Dubbo
-
 - 一、[简介](./java/senior/dubbo/01-briefintroduction.md)
 - 二、[为什么会出现Dubbo?](./java/senior/dubbo/02-reason.md)
 - 三、[Dubbo架构](./java/senior/dubbo/03-framework.md)
 - 四、[常见问题](./java/senior/dubbo/04-question.md)
 
-#### 存储
+#### 性能调优
+
+##### JVM性能调优
+- 一、[JVM类加载机制](./po/jvm/classloader.md)
 
 #### 技巧
 - [ThreadLocal](./skill/threadlocal.md)
 - [双重for打印出你想要的任何形状](./skill/double-for.md)
-#### 持续构建
