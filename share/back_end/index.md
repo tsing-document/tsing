@@ -46,7 +46,8 @@
 #### 性能调优
 
 ##### JVM性能调优
-- 一、[JVM类加载机制](./po/jvm/classloader.md)
+- 一、[JVM类加载机制](./po/jvm/01-classloader.md)
+- 二、[JVM内存模型](./po/jvm/02-memorymodel.md)
 
 #### 技巧
 - [ThreadLocal](./skill/threadlocal.md)

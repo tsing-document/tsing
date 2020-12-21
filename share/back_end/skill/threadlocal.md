@@ -1,4 +1,4 @@
-![](https://imgkr2.cn-bj.ufileos.com/114526a0-10c0-4741-b6da-1567ca75c106.jpg?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=3kgU%252B6NJ4DrcMfU9OqQOn1%252BG25E%253D&Expires=1608216680)
+![](./img/threadlocal.jpg)
 #### ThreadLocal
 
 ##### 说明：
@@ -30,7 +30,7 @@ public class UniqueThreadIdGenerator {
 ```
 
 ##### 多线程下的`ThreadLocal`？
-![](https://imgkr2.cn-bj.ufileos.com/7a769a92-05c1-4828-b694-c8e33a64a52f.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=j9iu0A%252Fc9Xtj%252BZ%252F5rUzqQrJOTaw%253D&Expires=1608219892)
+![](./img/threadlocal-neicun.jpeg)
 
 ##### 查看源码
 - set
@@ -104,7 +104,7 @@ public class UniqueThreadIdGenerator {
 
 ##### 注意事项：
 - 内存泄漏：
-![](https://imgkr2.cn-bj.ufileos.com/93054094-5b9b-4b8c-9265-4af2018c2a0a.jpeg?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=P8Nf4JJnUpw8JDjaTXYTwUesd%252BY%253D&Expires=1608249061)
+![](./img/threadlocal-neicun.jpeg)
 - 说明：
 > 1、Thread中有一个ThreadLocalMap,在set()或者get()的时候都会获取ThreadLocalMap。  
 > 2、ThreadLocalMap的key就是当前的ThreadLocal，值是我们自己设置的。  

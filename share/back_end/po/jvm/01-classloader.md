@@ -88,4 +88,4 @@ public class MyClassLoaderTest {
   - 5、如果`扩展类加载器`可以加载，就直接加载，不能加载推给`应用类加载器`。
   - 6、如果`应用类加载器`可以加载，就直接加载，不能加载推给`自定义类加载器`。
   - 7、如果`自定义类加载器`可以加载，就直接加载，不能加载就会报`classNotFound`异常。
-![](https://imgkr2.cn-bj.ufileos.com/8228c582-c9ac-46e9-b87b-cf5be92437b4.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=vKIs9Ipbz0zE1lXF%252BzFOAf6W3xI%253D&Expires=1608377186)
+![](./img/jvm-classloader.png)
