@@ -49,6 +49,7 @@
 - 一、[JVM类加载机制](./po/jvm/01-classloader.md)
 - 二、[JVM内存模型](./po/jvm/02-memorymodel.md)
 - 三、[垃圾收集机制](./po/jvm/03-gccollector.md)
+- 四、[垃圾收集算法](./po/jvm/04-gcalgorithm.md)
 
 #### 技巧
 - [ThreadLocal](./skill/threadlocal.md)
