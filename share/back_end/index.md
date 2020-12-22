@@ -50,6 +50,7 @@
 - 二、[JVM内存模型](./po/jvm/02-memorymodel.md)
 - 三、[垃圾收集机制](./po/jvm/03-gccollector.md)
 - 四、[垃圾收集算法](./po/jvm/04-gcalgorithm.md)
+- 五、[调优工具](./po/jvm/05-tool.md)
 
 #### 技巧
 - [ThreadLocal](./skill/threadlocal.md)
