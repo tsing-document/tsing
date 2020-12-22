@@ -8,8 +8,9 @@
     - [持久化](./redis/basic/persistence.md)
     - [发布订阅](./redis/basic/publishsubscribe.md)
     - [应用场景](./redis/basic/applicationscenarios.md)
-- 高级
+- 进阶
     - [动态字符串](./redis/advanced/01-dynamicstring.md)
+    - [链表和节点](./redis/advanced/02-linkednode.md)
 
 #### Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
