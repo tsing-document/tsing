@@ -9,7 +9,7 @@
     - [发布订阅](./redis/basic/publishsubscribe.md)
     - [应用场景](./redis/basic/applicationscenarios.md)
 - 高级
-    - 
+    - [动态字符串](./redis/advanced/01-dynamicstring.md)
 
 #### Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
