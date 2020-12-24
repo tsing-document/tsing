@@ -9,9 +9,11 @@
     - [发布订阅](./redis/basic/publishsubscribe.md)
     - [应用场景](./redis/basic/applicationscenarios.md)
 - 进阶
-    - [动态字符串](./redis/advanced/01-dynamicstring.md)
-    - [链表和节点](./redis/advanced/02-linkednode.md)
-    - [字典](./redis/advanced/03-dic.md)
+    - [动态字符串-String](./redis/advanced/01-dynamicstring.md)
+    - [链表和节点-List](./redis/advanced/02-linkednode.md)
+    - [字典-Hash](./redis/advanced/03-dic.md)
+    - [intset和hashtable-Set](./redis/advanced/04-intsethashtable.md)
+    - [skiplist-zSet]()
 
 #### Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
