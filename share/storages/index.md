@@ -11,6 +11,7 @@
 - 进阶
     - [动态字符串](./redis/advanced/01-dynamicstring.md)
     - [链表和节点](./redis/advanced/02-linkednode.md)
+    - [字典](./redis/advanced/03-dic.md)
 
 #### Elasticsearch 基础 
 - [简介](./elasticsearch/introduce.md)
