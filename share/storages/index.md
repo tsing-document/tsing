@@ -23,6 +23,11 @@
 
 #### MySQL
 
+##### Book
+- MySQL性能优化
+    - 基础篇
+        - [架构组成](./mysql/book/mysqlxingnengyouhua/01-framework.md)
+
 ##### 高级
 - 基础
     - [mysql和程序的交互](./mysql/interactive.md)
