@@ -27,6 +27,8 @@
 - MySQL性能优化
     - 基础篇
         - [架构组成](./mysql/book/mysqlxingnengyouhua/01-framework.md)
+        - [存储引擎](./mysql/book/mysqlxingnengyouhua/02-storageengine.md)
+        - [锁定机制](./mysql/book/mysqlxingnengyouhua/03-lock.md)
 
 ##### 高级
 - 基础
