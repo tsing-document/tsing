@@ -6,6 +6,7 @@
 - [server](/share/server/index.md) 
 - [version_management](/share/vs/git/index.md)
 - [优化](/share/optimization/index.md)
+- [Design Pattern](/share/design_pattern/index.md)
 
 
 ## TODO
@@ -60,7 +61,13 @@
     - 10排序
 - 23种设计模式
 - 8个数据结构
-- 6大设计原则
+- 6大设计原则：
+    - 单一原则（一个类和方法只做一件事）
+    - 里氏替换（多态、子类可扩展父类）
+    - 依赖倒置（细节依赖抽象、下层依赖上层）
+    - 接口隔离（建立单一接口）
+    - 迪米特原则（最少知道、降低耦合）
+    - 开闭原则（抽象架构、扩展实现）
 ---
 - 能力提升
     - 英语
