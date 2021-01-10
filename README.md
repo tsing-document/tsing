@@ -9,7 +9,21 @@
 - ### [Design Pattern](/share/design_pattern/index.md)
 
 
-## TODO
+## Work Plan
+- 工作日（每天2小时）
+- 非工作日
+- [] Spring源码
+- 
+- 第一项嵌套的第二个元素
+2. 第二项：
+- 第二项嵌套的第一个元素
+- 第二项嵌套的第二个元素
+
+- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+
+
+## TODO-LIST
 - [JUC](./demo/juc/index.md)
 - Uml
 - [算法&数据结构](./share/datastructureandalgorithm/index.md)
