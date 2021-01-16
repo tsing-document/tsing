@@ -22,7 +22,7 @@
 ## Article Topics
 - [x] 版本控制 - Git
 - [ ] 存储 - Redis
-    - next article is `install and configure`
+    - next article is `datatype`
 
 ## TODO-LIST
 - [JUC](./demo/juc/index.md)
