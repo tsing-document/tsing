@@ -24,7 +24,7 @@
 
 ##### Spring
 
-- 一、[简介](./java/advanced/spring/01-briefintroduction.md)
+- [Spring-第一版](./java/advanced/spring/index.md)
 
 ##### Springmvc
 
