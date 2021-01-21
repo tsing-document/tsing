@@ -15,7 +15,7 @@
 
 #### 1.2 生成GitHub中的token
 先注册[GitHub](https://github.com/)账号，然后在主页点击用户头像，选择【Settings】-【Developer settings】-【Personal access tokens】-【Generate new token】，填写好描述【Note】，勾选【repo】，然后点击【Generate token】生成一个Token，注意这个Token只会显示一次，先保存至记事本。
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9saWhhbzE5OTEuZ2l0ZWUuaW8vaW1hZ2VzLWJlZC9pbWcvMjAxOTExMjMxNDU4MjMucG5n?x-oss-process=image/format,png)
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9saWhhbzE5OTEuZ2l0ZWUuaW8vaW1hZ2VzLWJlZC9pbWcvMjAxOTExMjMxNDU4MjMucG5n?x-oss-process=image/format.png)
 
 #### 1.3 介绍PicGo
 PicGo是一个用于快速上传图片并获取Url链接的工具。它现在支持的图床平台有：七牛、腾讯云、又拍云、GitHub、SM.MS、阿里云OSS、Imgur。你可以自行开发第三方图床插件。
