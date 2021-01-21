@@ -5,9 +5,10 @@
 - ### [Storage](/share/storages/index.md)
 - ### [Server](/share/server/index.md) 
 - ### [Version Management](/share/vs/git/index.md)
-- ### [优化](/share/optimization/index.md)
+- ### [Optimization](/share/optimization/index.md)
 - ### [Design Pattern](/share/design_pattern/index.md)
 - ### [Software Engineering](/share/software-engineering/index.md)
+- ### [娱乐技术](/share/entertainment/index.md)
 
 ## Work Plan
 - Desc:
