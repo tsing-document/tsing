@@ -32,6 +32,8 @@
 
 ##### MyBatis
 
+- [MyBatis-第一版](./java/advanced/mybatis/index.md)
+
 *****
 
 #### 高级
