@@ -23,15 +23,12 @@
 #### 进阶
 
 ##### Spring
-
 - [Spring-第一版](./java/advanced/spring/index.md)
 
 ##### Springmvc
-
 - [SpringMVC-第一版](./java/advanced/springmvc/index.md)
 
 ##### MyBatis
-
 - [MyBatis-第一版](./java/advanced/mybatis/index.md)
 
 *****
@@ -55,13 +52,12 @@
         - 五、[实战]()
 
 #### 性能调优
-
-##### JVM性能调优
-- 一、[JVM类加载机制](./po/jvm/01-classloader.md)
-- 二、[JVM内存模型](./po/jvm/02-memorymodel.md)
-- 三、[垃圾收集机制](./po/jvm/03-gccollector.md)
-- 四、[垃圾收集算法](./po/jvm/04-gcalgorithm.md)
-- 五、[调优工具](./po/jvm/05-tool.md)
+- JVM性能调优
+    - 一、[JVM类加载机制](./po/jvm/01-classloader.md)
+    - 二、[JVM内存模型](./po/jvm/02-memorymodel.md)
+    - 三、[垃圾收集机制](./po/jvm/03-gccollector.md)
+    - 四、[垃圾收集算法](./po/jvm/04-gcalgorithm.md)
+    - 五、[调优工具](./po/jvm/05-tool.md)
 
 #### 技巧
 - [ThreadLocal](./skill/threadlocal.md)
