@@ -24,7 +24,7 @@
 - `tar -zxvf apache-zookeeper-3.6.2-bin.tar.gz`  
 
 3、复制zoo_sample.cfg并重命名为zoo.cfg：  
-- `cp /home/apache-zookeeper-3.6.2-bin/conf/zoo_sample.cfg /home/apache-zookeeper-3.6.2-bin/conf/zooe.cfg`  
+- `cp /home/apache-zookeeper-3.6.2-bin/conf/zoo_sample.cfg /home/apache-zookeeper-3.6.2-bin/conf/zoo.cfg`  
 
 4、启动：  
 - `sh apache-zookeeper-3.6.2-bin/bin/zkServer.sh start`
