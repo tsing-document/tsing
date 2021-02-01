@@ -3,7 +3,7 @@
 ### Java专题分类
 高级
 - 分布式
-    - [Zookeper-基础](./java/senior/distriuted/zookeeper/basic/introduction.md)
+    - [Zookeper-基础-介绍](./java/senior/distributed/zookeeper/basic/introduction.md)
 
 
 ### Storages专题分类
