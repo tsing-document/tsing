@@ -7,6 +7,9 @@
     - [Zookeper-基础-安装](./java/senior/distributed/zookeeper/basic/installation.md)
     - [Zookeper-基础-客户端API](./java/senior/distributed/zookeeper/basic/client-api.md)
     - [Zookeper-基础-acl](./java/senior/distributed/zookeeper/basic/acl.md)
+    - [Zookeper-基础-watcher](./java/senior/distributed/zookeeper/basic/watcher.md)
+    - [Zookeper-进阶-分布式配置中心](./java/senior/distributed/zookeeper/advanced/acl.md)
+    
 
 
 ### Storages专题分类
