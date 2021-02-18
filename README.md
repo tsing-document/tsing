@@ -8,9 +8,7 @@
     - [Zookeper-基础-客户端API](./java/senior/distributed/zookeeper/basic/client-api.md)
     - [Zookeper-基础-acl](./java/senior/distributed/zookeeper/basic/acl.md)
     - [Zookeper-基础-watcher](./java/senior/distributed/zookeeper/basic/watcher.md)
-    - [Zookeper-进阶-分布式配置中心](./java/senior/distributed/zookeeper/advanced/acl.md)
-    
-
+    - [Zookeper-进阶-curator](./java/senior/distributed/zookeeper/advanced/curator.md)
 
 ### Storages专题分类
 ### 设计模式专题
