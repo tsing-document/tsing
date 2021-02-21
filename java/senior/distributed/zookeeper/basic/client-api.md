@@ -178,6 +178,24 @@
   numChildren = 0
 ```
 
+- 说明：
+
+|  节点名称   |  描述   |
+| --- | --- |
+|  cZxid   | 创建znode更改的事务ID  |
+|  mZxid   | 最后修改znode更改的事务ID |
+|  pZxid   | 用于添加或删除子节点的znode更改的事务ID |
+|  ctime   | 表示从1970-01-01T00:00:00Z开始以毫秒为单位的znode创建时间 |
+|  mtime   | 表示从1970-01-01T00:00:00Z开始以毫秒为单位的znode最近修改时间 |
+|  dataVersion  | 表示对该znode的数据所做的更改次数 |
+|  cversion | 表示对此znode的子节点进行的更改次数 |
+|  aclVersion | 对此znode的ACL进行更改的次数  |
+|  ephemeralOwner | 如果znode是ephemeral类型节点，则这是znode所有者的 session ID。 如果znode不是ephemeral节点，则该字段设置为零 |
+|  dataLength | 这是znode数据字段的长度 |
+|  numChildren | 子节点的数量 |
+
+
+
 <span style="display:block;text-align:center;color:#DCDCDC;">-END-</span>
 ![](https://cdn.jsdelivr.net/gh/tsing-dong/drawing.bed/personal/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.png)
 您好，我是一个Java小白，希望和大家一起在技术的道路上一快快乐的学习。希望与您在网络的世界上会面。
