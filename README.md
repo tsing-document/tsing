@@ -12,7 +12,7 @@
 
 - 分布式 | Dubbo
     - [Dubbo-基础-介绍](./java/senior/distributed/dubbo/basic/introduction.md)
-
+    - [Dubbo-基础-案例](./java/senior/distributed/dubbo/basic/case.md)
 
 
 ### Storages专题分类
