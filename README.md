@@ -14,6 +14,7 @@
     - [Dubbo-基础-介绍](./java/senior/distributed/dubbo/basic/introduction.md)
     - [Dubbo-基础-案例](./java/senior/distributed/dubbo/basic/case.md)
     - [Dubbo-基础-用法示例](./java/senior/distributed/dubbo/basic/usageexample.md)
+    - [Dubbo-进阶-架构设计](./java/senior/distributed/dubbo/advanced/architecturedesign.md)
 
 
 ### Storages专题分类
