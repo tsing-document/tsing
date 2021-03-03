@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e" modified="2021-03-02T12:28:48.691Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="IzIllZsr-zU3RqwiXfzn" type="embed">
+    <diagram id="SQVonTvNbGMESotub3eF" name="Page-1">
+        <mxGraphModel dx="1114" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#DAD2D8" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="零拷贝字节缓冲区(Zero-Copy-Capable Rich Byte Buffer）" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fillColor=#008a00;fontColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="720" width="640" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="通讯的API（Universal Communication API）" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fillColor=#008a00;fontColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="680" width="640" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;可扩展的事件模型（Extebsible Event model）&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fillColor=#008a00;fontColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="640" width="640" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="核心（Core）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#143642;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="690" width="130" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="零拷贝字节缓冲区(Zero-Copy-Capable Rich Byte Buffer）" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fontColor=#ffffff;strokeWidth=2;fillColor=#FF66B3;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="560" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="http 通道（Http Tunnel）" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fontColor=#ffffff;strokeWidth=2;fillColor=#FF66B3;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="520" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;套接字 &amp;amp; 数据报（Socket &amp;amp; 数据报）&amp;nbsp;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;strokeColor=#005700;fontColor=#ffffff;strokeWidth=2;fillColor=#FF66B3;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="480" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="服务通信（Transport Services）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#143642;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="450" width="260" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
