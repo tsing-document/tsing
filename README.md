@@ -25,3 +25,8 @@
 ### 框架源码专题分类
 ### 性能调优专题分类
 ### 版本控制专题分类
+
+## 文章专题分类
+
+### 《奇谈杂论》
+- [Java Volatile](./articleTopics/09-miscellaneous/01-javavolatile.md)
