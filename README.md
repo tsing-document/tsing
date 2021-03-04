@@ -30,4 +30,4 @@
 
 ### 《奇谈杂论》
 - [Java Volatile](./articleTopics/09-miscellaneous/01-javavolatile.md)
-- [CAS](./articleTopics/09-miscellaneous/01-cas.md)
+- [CAS](./articleTopics/09-miscellaneous/02-cas.md)
