@@ -9,6 +9,8 @@
     - [Zookeper-基础-acl](./java/senior/distributed/zookeeper/basic/acl.md)
     - [Zookeper-基础-watcher](./java/senior/distributed/zookeeper/basic/watcher.md)
     - [Zookeper-进阶-curator](./java/senior/distributed/zookeeper/advanced/curator.md)
+    - [Zookeper-进阶-分布式锁](./java/senior/distributed/zookeeper/advanced/distributed-lock.md)
+
 
 - 分布式 | Dubbo
     - [Dubbo-基础-介绍](./java/senior/distributed/dubbo/basic/introduction.md)
