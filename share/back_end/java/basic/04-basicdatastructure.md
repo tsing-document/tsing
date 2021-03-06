@@ -27,6 +27,13 @@
             - ![自动类型转换](./img/leixingzhuanhuan.png)
         - 强制类型转换：
             - 强制类型转换数据容易丢失精度。
+    - 注意：
+        - 问题：
+            - float转double出现误差。
+        - 为什么?
+            - java中float为四个字节，double为8个字节，float转double时候会补位。
+            - 先将float类型包装成BigDeciaml数据，然后调用floatValue()方法可以实现。
+
 
 - 语法：
 - 案例:
