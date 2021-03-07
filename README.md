@@ -35,5 +35,5 @@
 - [CAS](./articleTopics/09-miscellaneous/02-cas.md)
 - [Lock](./articleTopics/09-miscellaneous/03-lock.md)
 - [ArrayList](./articleTopics/09-miscellaneous/04-arrayList.md)
-
+- [ArrayList](./articleTopics/09-miscellaneous/05-hashmap.md)
 
