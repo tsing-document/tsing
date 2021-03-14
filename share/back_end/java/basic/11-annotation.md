@@ -1,5 +1,3 @@
-![](https://cdn.jsdelivr.net/gh/tsing-dong/drawing.bed/articleTopics/09-miscellaneous/04-arraylistarraylist.png)
-
 # 目录
 - 概述
 - 注解的核心
