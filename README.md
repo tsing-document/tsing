@@ -30,6 +30,11 @@
 
 ## 文章专题分类
 
+### 《Java专题分类》
+- Java专题分类 | 基础专题
+    - [多线程](./articleTopics/01-java/01-basic/12-multithreading.md)
+
+
 ### 《奇谈杂论》
 - [Java Volatile](./articleTopics/09-miscellaneous/01-javavolatile.md)
 - [CAS](./articleTopics/09-miscellaneous/02-cas.md)

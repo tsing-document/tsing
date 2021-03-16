@@ -1,0 +1,264 @@
+<mxfile>
+    <diagram id="nC4qDFp7MRvkT85LB1bn" name="Page-1">
+        <mxGraphModel dx="2131" dy="910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#F1FAEE" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="120" width="560" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Executors.newFixedThreadPool(10);&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="392" y="90" width="385" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#ae4132;fillColor=#fad9d5;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="120" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#10739e;fillColor=#b1ddf0;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="120" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="150" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;非核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="150" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;strokeWidth=3;labelBackgroundColor=#FFFFFF;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="219.5" as="sourcePoint"/>
+                        <mxPoint x="420" y="219.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;分10次处理任务，每次批量处理10任务&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#1D3557;" vertex="1" connectable="0" parent="19">
+                    <mxGeometry x="-0.3081" y="3" relative="1" as="geometry">
+                        <mxPoint x="30" y="3.5" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=none;" edge="1" parent="1" source="10" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot; color=&quot;#06052a&quot;&gt;如果说第一次处理10条任务，剩余的90任务会在队列中等待&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=none;" vertex="1" connectable="0" parent="22">
+                    <mxGeometry x="-0.2594" y="4" relative="1" as="geometry">
+                        <mxPoint x="31" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="任务数：100" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;fontColor=#1D3557;strokeColor=#33FF33;fillColor=#66FF66;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="200" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 10&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="190" width="78" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 0&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;size=20;" vertex="1" parent="1">
+                    <mxGeometry x="699" y="185" width="78" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="420" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="420" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="420" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="420" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font color=&quot;#ffffff&quot;&gt;。。。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="420" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&amp;nbsp;队列WorkQueue， 队列的长度无限加长&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="490" width="300" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="660" width="560" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Executors.newCachedThreadPool();&amp;nbsp;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="392" y="630" width="385" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#ae4132;fillColor=#fad9d5;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="660" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#10739e;fillColor=#b1ddf0;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="660" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="690" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;非核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="690" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=none;" edge="1" parent="1" source="34" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="105" y="590"/>
+                            <mxPoint x="716" y="590"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="&lt;font&gt;有多少任务数就会创建多少线程，线程会复用机制。&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#FFFFFF;fontColor=#06052A;" vertex="1" connectable="0" parent="43">
+                    <mxGeometry x="-0.5385" y="4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="任务数：100" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;fontColor=#1D3557;strokeColor=#33FF33;fillColor=#66FF66;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="740" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 0&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="730" width="78" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 无数个&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;size=20;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="730" width="91" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font color=&quot;#ffffff&quot;&gt;只有一个&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="524.5" y="950" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;&amp;nbsp;队列WorkQueue，队列的长度只有一个&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="439" y="1030" width="290" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1170" width="560" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Executors.newSingleThreadExecutor();&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="392" y="1140" width="385" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#ae4132;fillColor=#fad9d5;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1170" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#10739e;fillColor=#b1ddf0;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="1170" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="1200" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;非核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="1200" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=#06052A;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="1269.5" as="sourcePoint"/>
+                        <mxPoint x="420" y="1269.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="只有一个线程" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#06052A;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="63">
+                    <mxGeometry x="-0.2261" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-9" y="-7.5" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=#06052A;" edge="1" parent="1" source="53" target="58">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;当有一个任务在处理时，剩下的99个任务会在队列中等待。&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#06052A;" vertex="1" connectable="0" parent="66">
+                    <mxGeometry x="-0.2158" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="任务数：100" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;fontColor=#1D3557;strokeColor=#33FF33;fillColor=#66FF66;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="1250" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 1&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="1240" width="78" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 0&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;size=20;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="1240" width="91" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;b style=&quot;font-size: 15px&quot;&gt;&amp;nbsp;队列WorkQueue， 队列的长度无限加长&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="439" y="1540" width="290" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1470" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="1470" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="1470" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="1470" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font color=&quot;#ffffff&quot;&gt;。。。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="1470" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="因为队列有无数个，所以阿里不推荐使用。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="469" y="550" width="260" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="因为非核心线程有无数个，所以阿里不推荐使用。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="469" y="1080" width="281" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="因为队列有无数个，所以阿里不推荐使用。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="459.5" y="1590" width="281" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#457B9D;fillColor=#A8DADC;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1720" width="560" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#ae4132;fillColor=#fad9d5;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="1720" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#10739e;fillColor=#b1ddf0;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="1720" width="280" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="1750" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;非核心线程&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="1750" width="170" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=#06052A;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="1819.5" as="sourcePoint"/>
+                        <mxPoint x="420" y="1819.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=#06052A;" edge="1" parent="1" source="82" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;strokeColor=#457B9D;strokeWidth=3;fillColor=#A8DADC;fontColor=#06052A;" edge="1" parent="1" source="82" target="84">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="135" y="1650"/>
+                            <mxPoint x="746" y="1650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="任务数：100" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;fontColor=#1D3557;strokeColor=#33FF33;fillColor=#66FF66;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="1800" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 1-10&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="1790" width="78" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 21-30&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#6666FF;size=20;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="1790" width="91" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="2020" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="2020" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="2020" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="2020" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="&lt;font color=&quot;#ffffff&quot;&gt;。。。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fillColor=#6666FF;fontColor=#1D3557;strokeWidth=2;strokeColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="2020" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;ThreadPoolExecutor&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=0;fontColor=#1D3557;" vertex="1" parent="1">
+                    <mxGeometry x="392" y="1690" width="385" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="&lt;font color=&quot;#ffffff&quot;&gt;thread: 11-20&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;strokeColor=#33FF33;fontColor=#1D3557;fillColor=#FF66B3;" vertex="1" parent="1">
+                    <mxGeometry x="342" y="2020" width="88" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="100任务，当处理到31的时候就会出现异常" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="791" y="1680" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="提交优先级：核心线程--&amp;gt; 任务队列--&amp;gt;非核心线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="429" y="2160" width="310" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="执行优先级：核心线程--&amp;gt;非核心线程--&amp;gt;任务队列" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;sketch=0;fontColor=#06052A;" vertex="1" parent="1">
+                    <mxGeometry x="429" y="2190" width="310" height="10" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
