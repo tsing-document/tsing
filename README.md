@@ -42,3 +42,5 @@
 - [ArrayList](./articleTopics/09-miscellaneous/04-arrayList.md)
 - [HashMap](./articleTopics/09-miscellaneous/05-hashmap.md)
 
+## 个人相关
+- [简历](./author.md)
