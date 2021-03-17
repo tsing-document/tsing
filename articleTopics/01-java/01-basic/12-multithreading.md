@@ -189,32 +189,23 @@ class  MyThread implements Runnable {
 ```
 ![](https://cdn.jsdelivr.net/gh/tsing-dong/drawing.bed/articleTopics/01-java/01-basic/12-multithreadingThreadPoolExecutor.png)
 
+上文中的任务数应该是30，写错了。
+
+在上文的`自定义线程`的小节中当处理到31个任务的时候会出现异常，因为线程池是容器，也会有存满数据的情况。为了解决这种池子存满的情况，就出现了`拒绝策略`。
+
+触发拒接策略的条件：`当提交的任务数 > （队列的数量 + 最大的线程池数量）`
+
+四种方案拒绝策略:
+
+
+| 策略名称 |  描述  |
+| --- | --- |
+|  CallerRunsPolicy  | 如果添加失败，那么主线程会自己调用执行器中的exeute方法来执行该任务。    |
+|  AbortPolicy  | 线程池的默认策略，如果添加任务到线程池中，会抛出RejectedExecutionException异常。   |
+|  DiscardPolicy  | 如果添加失败，则放弃，并且不会抛出任何异常。  |
+|  DiscardOldestPolicy  | 如果添加到线程池失败，会将队列中最早添加的元素移除，再次尝试添加，如果失败继续按照策略继续尝试。 |
+
 
 <span style="display:block;text-align:center;color:#DCDCDC;">-END-</span>
 ![](https://cdn.jsdelivr.net/gh/tsing-dong/drawing.bed/personal/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.png)
 您好，我是一个Java小白，希望和大家一起在技术的道路上一起快乐的学习。希望与您在网络的世界上会面。
-
-
-![](https://cdn.jsdelivr.net/gh/tsing-dong/drawing.bed/articleTopics/01-java/01-basic/12-multithreadingcoverpicture.png)
-
-# 目录
-- 1、拒接策略
-
-## 1、概述
-在上文的`自定义线程`的小节中当处理到31个任务的时候会出现异常，因为线程池是容器，也会有存满数据的情况。为了解决这种池子存满的情况，就出现了`拒绝策略`。
-
-## 2、拒接策略
-> 1、触发拒接策略的条件
-
-当提交的任务数 > （队列的数量 + 最大的线程池数量）
-
-> 2、四种方案拒绝策略
-
-- CallerRunsPolicy 
-  - 如果添加失败，那么主线程会自己调用执行器中的exeute方法来执行该任务。
-- AbortPolicy 
-  - 线程池的默认策略，如果添加任务到线程池中，会抛出RejectedExecutionException异常。
-- DiscardPolicy 
-  - 如果添加失败，则放弃，并且不会抛出任何异常。
-- DiscardOldestPolicy 
-  - 如果添加到线程池失败，会将队列中最早添加的元素移除，再次尝试添加，如果失败继续按照策略继续尝试。
