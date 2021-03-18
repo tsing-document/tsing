@@ -10,6 +10,7 @@
     - [Zookeper-基础-watcher](./java/senior/distributed/zookeeper/basic/watcher.md)
     - [Zookeper-进阶-curator](./java/senior/distributed/zookeeper/advanced/curator.md)
     - [Zookeper-进阶-分布式锁](./java/senior/distributed/zookeeper/advanced/distributed-lock.md)
+    - [Zookeper-进阶-集群](./java/senior/distributed/zookeeper/advanced/custer.md)
 
 
 - 分布式 | Dubbo
